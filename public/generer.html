@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Générer une offre avec l'IA</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 640px; margin: 30px auto; padding: 0 16px; }
+    label { display: block; margin-top: 14px; font-weight: bold; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+    textarea { height: 260px; }
+    button { margin-top: 16px; padding: 10px 18px; cursor: pointer; }
+    #message { margin-top: 10px; color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Nouvelle offre</h1>
+
+  <label>Titre du poste *</label>
+  <input id="titre" placeholder="Développeur web">
+
+  <label>Entreprise</label>
+  <input id="entreprise" placeholder="TechNova">
+
+  <label>Lieu</label>
+  <input id="lieu" placeholder="Tunis">
+
+  <label>Type de contrat</label>
+  <input id="contrat" placeholder="CDI">
+
+  <label>Compétences</label>
+  <input id="competences" placeholder="JavaScript, Node.js, SQL">
+
+  <button id="btnIA" type="button">Générer avec l'IA</button>
+  <div id="message"></div>
+
+  <label>Description</label>
+  <textarea id="description" placeholder="La description apparaîtra ici..."></textarea>
+
+  <script>
+    const bouton = document.getElementById('btnIA');
+    const message = document.getElementById('message');
+
+    bouton.addEventListener('click', async () => {
+      const titre = document.getElementById('titre').value.trim();
+      if (!titre) {
+        message.textContent = 'Saisis d\'abord le titre du poste.';
+        return;
+      }
+
+      bouton.disabled = true;
+      message.textContent = 'Génération en cours...';
+
+      try {
+        const reponse = await fetch('/offre/generer', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            titre,
+            entreprise: document.getElementById('entreprise').value,
+            lieu: document.getElementById('lieu').value,
+            contrat: document.getElementById('contrat').value,
+            competences: document.getElementById('competences').value
+          })
+        });
+
+        const data = await reponse.json();
+        if (!reponse.ok) throw new Error(data.message || 'Erreur serveur');
+
+        document.getElementById('description').value = data.texte;
+        message.textContent = data.source === 'ia'
+          ? 'Description générée par l\'IA. Tu peux la modifier.'
+          : 'IA indisponible : texte de secours inséré.';
+      } catch (erreur) {
+        message.textContent = 'Erreur : ' + erreur.message;
+      } finally {
+        bouton.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
