@@ -1,0 +1,221 @@
+@import "tailwindcss" source(".");
+
+/* Variante « dark: » de Tailwind pilotée par l'attribut data-theme (choix de l'utilisateur ou du système). */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * Identité TalentWave : sobre, éditoriale, sans dégradés ni halos.
+ * Gris légèrement bleuté, un bleu « océan » pour l'action, un marine profond pour la navigation et les bandeaux
+ * de marque, des couleurs d'état réservées aux états. Thème clair par défaut ; le thème sombre (plus bas) a ses
+ * propres valeurs, choisies une à une (pas une inversion automatique).
+ * Contrastes calculés (WCAG) : tout texte ≥ 4,5:1 sur ses fonds, dans les deux thèmes.
+ */
+@theme {
+  --color-tw-ink: #15202D;
+  --color-tw-muted: #56626F;
+  --color-tw-canvas: #F3F5F8;
+  --color-tw-surface: #FFFFFF;
+  --color-tw-line: #E1E5EB;
+  --color-tw-tint: #E8F0FB;
+
+  --color-tw-accent: #1D5FAE;        /* liens, icônes, texte d'accent */
+  --color-tw-accent-strong: #164C8E;
+  --color-tw-primary: #1D5FAE;       /* aplats des boutons principaux (texte blanc) */
+  --color-tw-primary-strong: #164C8E;
+
+  --color-tw-success: #1D7348;
+  --color-tw-success-soft: #E6F4EC;
+  --color-tw-success-line: #BEE2CD;
+  --color-tw-success-fill: #1D7348;
+  --color-tw-warning: #8F5405;
+  --color-tw-warning-soft: #FDF3E3;
+  --color-tw-warning-line: #F1D5A8;
+  --color-tw-danger: #BC312A;
+  --color-tw-danger-soft: #FCEDEC;
+  --color-tw-danger-line: #F4C9C5;
+  --color-tw-danger-fill: #BC312A;
+
+  /* Navigation latérale et bandeaux de marque (marine profond, texte clair). */
+  --color-tw-nav: #0F2238;
+  --color-tw-nav-ink: #F1F5FA;
+  --color-tw-nav-muted: #A3B3C6;
+  --color-tw-nav-hover: #172E49;
+  --color-tw-nav-active: #22406A;
+  --color-tw-nav-accent: #7DB8FF;
+  --color-tw-brand: #0F2238;
+
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --shadow-soft: 0 1px 2px rgb(16 24 40 / 0.06), 0 1px 1px rgb(16 24 40 / 0.03);
+  --shadow-raise: 0 10px 24px -14px rgb(16 24 40 / 0.28);
+  --shadow-lift: 0 18px 40px -18px rgb(16 24 40 / 0.38);
+
+  --animate-fade-in: fade-in 160ms ease-out;
+  --animate-shimmer: shimmer 1.4s linear infinite;
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(3px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes shimmer {
+    from { background-position: -400px 0; }
+    to { background-position: 400px 0; }
+  }
+}
+
+/*
+ * Couleurs des graphiques (validées au calcul : bande de luminosité, daltonisme, contraste avec le fond).
+ * Variables CSS : Recharts les accepte dans fill/stroke, les graphiques suivent donc le thème.
+ */
+:root {
+  color-scheme: light;
+  --chart-series: #2b6cb0;
+  --chart-candidat: #2b6cb0;
+  --chart-rh: #b8781f;
+  --chart-admin: #7a5aa8;
+  --chart-active: #2f855a;
+  --chart-inactive: #a9b1bc;
+  --chart-expired: #c0392b;
+  --chart-deemphasis: #c7ced8;
+  --chart-grid: #edf0f4;
+  --chart-axis: #e1e5eb;
+  --chart-cursor: #f3f5f8;
+  --skeleton-a: #e9edf2;
+  --skeleton-b: #f5f7fa;
+  --selection: rgb(29 95 174 / 0.18);
+}
+
+/* Thème sombre : surfaces bleu nuit étagées, accents éclaircis, aplats d'action gardés assez foncés pour le texte blanc. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-tw-ink: #E7ECF2;
+  --color-tw-muted: #98A5B6;
+  --color-tw-canvas: #0D1218;
+  --color-tw-surface: #141B24;
+  --color-tw-line: #253141;
+  --color-tw-tint: #15263A;
+
+  --color-tw-accent: #71AAEF;
+  --color-tw-accent-strong: #93C0F4;
+  --color-tw-primary: #2A6BC2;
+  --color-tw-primary-strong: #235DAB;
+
+  --color-tw-success: #52C38D;
+  --color-tw-success-soft: #10261B;
+  --color-tw-success-line: #1F4A33;
+  --color-tw-success-fill: #1E7A4E;
+  --color-tw-warning: #E5A852;
+  --color-tw-warning-soft: #2A1E0C;
+  --color-tw-warning-line: #4D3816;
+  --color-tw-danger: #F17A72;
+  --color-tw-danger-soft: #2D1514;
+  --color-tw-danger-line: #552723;
+  --color-tw-danger-fill: #BF3830;
+
+  --color-tw-nav: #0A1017;
+  --color-tw-nav-ink: #E7ECF2;
+  --color-tw-nav-muted: #93A0B1;
+  --color-tw-nav-hover: #121A24;
+  --color-tw-nav-active: #182A40;
+  --color-tw-nav-accent: #71AAEF;
+  --color-tw-brand: #12253D;
+
+  --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.35);
+  --shadow-raise: 0 12px 28px -14px rgb(0 0 0 / 0.65);
+  --shadow-lift: 0 20px 44px -16px rgb(0 0 0 / 0.75);
+
+  --chart-series: #3f82d0;
+  --chart-candidat: #3f82d0;
+  --chart-rh: #c4842f;
+  --chart-admin: #9373c6;
+  --chart-active: #4aa877;
+  --chart-inactive: #5d6876;
+  --chart-expired: #c9433b;
+  --chart-deemphasis: #3a4656;
+  --chart-grid: #1e2833;
+  --chart-axis: #2a3644;
+  --chart-cursor: #1a2330;
+  --skeleton-a: #1a2330;
+  --skeleton-b: #222d3b;
+  --selection: rgb(113 170 239 / 0.28);
+}
+
+@layer base {
+  html { background: var(--color-tw-canvas); }
+  body {
+    @apply bg-tw-canvas font-sans text-tw-ink antialiased;
+    min-height: 100dvh;
+    font-feature-settings: "tnum" 0;
+  }
+  h1, h2, h3, h4 { @apply font-display tracking-[-0.01em]; }
+  ::selection { background: var(--selection); }
+  :focus-visible { outline: 2px solid var(--color-tw-accent); outline-offset: 2px; }
+  /* Changement de thème sans clignotement des transitions. */
+  html.theme-switching *, html.theme-switching *::before, html.theme-switching *::after { transition: none !important; }
+}
+
+@layer components {
+  /* Carte : surface, filet fin, ombre légère. */
+  .card {
+    @apply rounded-xl border border-tw-line bg-tw-surface shadow-[var(--shadow-soft)];
+  }
+  /* Carte cliquable : se soulève légèrement au survol. */
+  .card-hover {
+    @apply transition-[box-shadow,border-color,transform] duration-150;
+  }
+  .card-hover:hover {
+    @apply -translate-y-px border-tw-accent/30 shadow-[var(--shadow-raise)];
+  }
+  /* Pastille d'icône teintée (statistiques, rubriques). */
+  .icon-chip {
+    @apply grid size-10 shrink-0 place-items-center rounded-lg;
+  }
+  .gradient-brand {
+    background-color: var(--color-tw-primary);
+  }
+  .gradient-night {
+    background-color: var(--color-tw-brand);
+  }
+  /* Bandeau de marque : marine profond et lignes de vagues discrètes (motif « TalentWave »). */
+  .brand-panel {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: var(--color-tw-brand);
+    color: #F1F5FA;
+  }
+  .brand-panel::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 auto;
+    width: min(520px, 70%);
+    height: 100%;
+    z-index: -1;
+    opacity: 0.16;
+    background-color: #7DB8FF;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 200' preserveAspectRatio='none'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath d='M0 150 C 80 120 140 180 220 150 S 360 110 520 140'/%3E%3Cpath d='M0 125 C 80 95 140 155 220 125 S 360 85 520 115'/%3E%3Cpath d='M0 100 C 80 70 140 130 220 100 S 360 60 520 90'/%3E%3Cpath d='M0 75 C 80 45 140 105 220 75 S 360 35 520 65'/%3E%3Cpath d='M0 50 C 80 20 140 80 220 50 S 360 10 520 40'/%3E%3C/g%3E%3C/svg%3E") right bottom / 100% 100% no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 200' preserveAspectRatio='none'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath d='M0 150 C 80 120 140 180 220 150 S 360 110 520 140'/%3E%3Cpath d='M0 125 C 80 95 140 155 220 125 S 360 85 520 115'/%3E%3Cpath d='M0 100 C 80 70 140 130 220 100 S 360 60 520 90'/%3E%3Cpath d='M0 75 C 80 45 140 105 220 75 S 360 35 520 65'/%3E%3Cpath d='M0 50 C 80 20 140 80 220 50 S 360 10 520 40'/%3E%3C/g%3E%3C/svg%3E") right bottom / 100% 100% no-repeat;
+  }
+  /* Petit sur-titre éditorial (« Coupons », « Sécurité »...). */
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.12em] text-tw-muted;
+  }
+  .skeleton {
+    background: linear-gradient(90deg, var(--skeleton-a) 0px, var(--skeleton-b) 80px, var(--skeleton-a) 160px);
+    background-size: 800px 100%;
+    @apply animate-shimmer rounded-md;
+  }
+  .tabular { font-variant-numeric: tabular-nums; }
+}
+
+/* Avatar de l'entretien : respiration et hochement de tête pendant l'écoute. */
+@keyframes avatar-breathe { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(1.5px); } }
+@keyframes avatar-nod { 0%, 100% { transform: rotate(0deg); } 30% { transform: rotate(1.2deg) translateY(1px); } 60% { transform: rotate(-0.6deg); } }
+.avatar-breathe { animation: avatar-breathe 4s ease-in-out infinite; }
+.avatar-nod { animation: avatar-nod 2.6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; }
+}

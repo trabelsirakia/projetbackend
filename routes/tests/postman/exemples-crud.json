@@ -1,0 +1,1039 @@
+{
+ "0 · Connexion/Connexion recruteur": {
+  "code": 200,
+  "status": "OK",
+  "ms": 457,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "10;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Connexion réussie.\",\n  \"data\": {\n    \"user\": {\n      \"firstName\": \"Sarra\",\n      \"lastName\": \"Mansouri\",\n      \"email\": \"raifguizani10+live-rh@gmail.com\",\n      \"role\": \"recruteur\",\n      \"phone\": \"\",\n      \"preferredLanguage\": \"fr\",\n      \"isBlocked\": false,\n      \"lastLoginAt\": \"2026-11-12T22:43:06.651Z\",\n      \"createdAt\": \"2026-11-12T20:00:24.403Z\",\n      \"updatedAt\": \"2026-11-12T22:43:06.652Z\",\n      \"id\": \"6af61ad845744869b6dc9a43\"\n    },\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2MWFkODQ1NzQ0ODY5YjZkYzlhNDMiLCJyb2xlIjoicmVjcnV0ZXVyIiwidHlwZSI6ImFjY2VzcyIsImlhdCI6MTc5NDUyMzQxNSwiZXhwIjoxNzk0NTI0MzE1LCJpc3MiOiJ0YWxlbnR3YXZlLWF… (249 caractères)\",\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2MWFkODQ1NzQ0ODY5YjZkYzlhNDMiLCJqdGkiOiJhNTZlMDRlNC05NWI5LTRlNzktODAzZi1iNWMzMDk5NWU3YmYiLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc5NDUyMzQxNSwiZXhwIjoxNzk… (285 caractères)\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.937Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/CREATE — Créer un quiz": {
+  "code": 201,
+  "status": "Created",
+  "ms": 36,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Quiz créé.\",\n  \"data\": {\n    \"title\": \"Quiz CRUD Postman — React & API\",\n    \"description\": \"Quiz créé depuis l'application Postman\",\n    \"metier\": \"dev-fullstack\",\n    \"job\": null,\n    \"language\": \"fr\",\n    \"difficulty\": \"moyen\",\n    \"durationMinutes\": 6,\n    \"passingScore\": 50,\n    \"questionsPerAttempt\": 3,\n    \"shuffleQuestions\": true,\n    \"maxAttempts\": 1,\n    \"questions\": [\n      {\n        \"text\": \"Quel hook React exécute un effet après le rendu ?\",\n        \"options\": [\n          \"useMemo\",\n          \"useEffect\",\n          \"useRef\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"useEffect s'exécute après le rendu.\",\n        \"skill\": \"React\",\n        \"points\": 1,\n        \"difficulty\": \"moyen\",\n        \"_id\": \"6af64117aded5ccd472c17b9\"\n      },\n      {\n        \"text\": \"Quel code HTTP pour une création réussie ?\",\n        \"options\": [\n          \"200\",\n          \"201\",\n          \"204\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"\",\n        \"skill\": \"API REST\",\n        \"points\": 1,\n        \"difficulty\": \"moyen\",\n        \"_id\": \"6af64117aded5ccd472c17ba\"\n      },\n      {\n        \"text\": \"Quelle commande Git rejoue des commits sur une autre base ?\",\n        \"options\": [\n          \"merge\",\n          \"rebase\",\n          \"stash\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"\",\n        \"skill\": \"Git\",\n        \"points\": 2,\n        \"difficulty\": \"difficile\",\n        \"_id\": \"6af64117aded5ccd472c17bb\"\n      }\n    ],\n    \"status\": \"inactif\",\n    \"source\": \"manuel\",\n    \"createdBy\": \"6af61ad845744869b6dc9a43\",\n    \"createdAt\": \"2026-11-12T22:43:35.645Z\",\n    \"updatedAt\": \"2026-11-12T22:43:35.645Z\",\n    \"questionCount\": 3,\n    \"skills\": [\n      \"React\",\n      \"API REST\",\n      \"Git\"\n    ],\n    \"id\": \"6af64117aded5ccd472c17b8\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.939Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/CREATE — Données invalides refusées (422)": {
+  "code": 422,
+  "status": "Unprocessable Entity",
+  "ms": 41,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": false,\n  \"code\": \"VALIDATION_ERROR\",\n  \"message\": \"Les données envoyées sont invalides.\",\n  \"errors\": [\n    {\n      \"field\": \"title\",\n      \"message\": \"Le titre : 3 caractères minimum.\"\n    },\n    {\n      \"field\": \"questions.0\",\n      \"message\": \"La bonne réponse doit désigner une des réponses proposées.\"\n    }\n  ]\n}",
+  "at": "2026-11-12T22:43:46.940Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/READ — Lire le quiz créé": {
+  "code": 200,
+  "status": "OK",
+  "ms": 30,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"title\": \"Quiz CRUD Postman — React & API\",\n    \"description\": \"Quiz créé depuis l'application Postman\",\n    \"metier\": \"dev-fullstack\",\n    \"job\": null,\n    \"language\": \"fr\",\n    \"difficulty\": \"moyen\",\n    \"durationMinutes\": 6,\n    \"passingScore\": 50,\n    \"questionsPerAttempt\": 3,\n    \"shuffleQuestions\": true,\n    \"maxAttempts\": 1,\n    \"questions\": [\n      {\n        \"text\": \"Quel hook React exécute un effet après le rendu ?\",\n        \"options\": [\n          \"useMemo\",\n          \"useEffect\",\n          \"useRef\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"useEffect s'exécute après le rendu.\",\n        \"skill\": \"React\",\n        \"points\": 1,\n        \"difficulty\": \"moyen\",\n        \"_id\": \"6af64117aded5ccd472c17b9\"\n      },\n      {\n        \"text\": \"Quel code HTTP pour une création réussie ?\",\n        \"options\": [\n          \"200\",\n          \"201\",\n          \"204\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"\",\n        \"skill\": \"API REST\",\n        \"points\": 1,\n        \"difficulty\": \"moyen\",\n        \"_id\": \"6af64117aded5ccd472c17ba\"\n      },\n      {\n        \"text\": \"Quelle commande Git rejoue des commits sur une autre base ?\",\n        \"options\": [\n          \"merge\",\n          \"rebase\",\n          \"stash\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"\",\n        \"skill\": \"Git\",\n        \"points\": 2,\n        \"difficulty\": \"difficile\",\n        \"_id\": \"6af64117aded5ccd472c17bb\"\n      }\n    ],\n    \"status\": \"inactif\",\n    \"source\": \"manuel\",\n    \"createdBy\": {\n      \"firstName\": \"Sarra\",\n      \"lastName\": \"Mansouri\",\n      \"id\": \"6af61ad845744869b6dc9a43\"\n    },\n    \"createdAt\": \"2026-11-12T22:43:35.645Z\",\n    \"updatedAt\": \"2026-11-12T22:43:35.645Z\",\n    \"questionCount\": 3,\n    \"skills\": [\n      \"React\",\n      \"API REST\",\n      \"Git\"\n    ],\n    \"id\": \"6af64117aded5ccd472c17b8\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.940Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/LIST — Pagination page 1 (2 par page)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 49,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"title\": \"Quiz CRUD Postman — React & API\",\n        \"description\": \"Quiz créé depuis l'application Postman\",\n        \"metier\": \"dev-fullstack\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 6,\n        \"passingScore\": 50,\n        \"questionsPerAttempt\": 3,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"inactif\",\n        \"source\": \"manuel\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T22:43:35.645Z\",\n        \"updatedAt\": \"2026-11-12T22:43:35.645Z\",\n        \"questionCount\": 3,\n        \"skills\": [\n          \"React\",\n          \"API REST\",\n          \"Git\"\n        ],\n        \"id\": \"6af64117aded5ccd472c17b8\",\n        \"attempts\": 0,\n        \"…\": \"2 champ(s) de plus\"\n      },\n      {\n        \"title\": \"Quiz de compétences — Chargé·e de Marketing Digital\",\n        \"description\": \"Questions de la banque du métier Chargé·e de Marketing Digital.\",\n        \"metier\": \"marketing-digital\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 8,\n        \"passingScore\": 60,\n        \"questionsPerAttempt\": 8,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"actif\",\n        \"source\": \"banque\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T20:00:26.693Z\",\n        \"updatedAt\": \"2026-11-12T20:00:26.693Z\",\n        \"questionCount\": 10,\n        \"skills\": [\n          \"SEO\",\n          \"SEA\",\n          \"Google Analytics\",\n          \"… 4 élément(s) de plus\"\n        ],\n        \"id\": \"6af61ada45744869b6dc9a91\",\n        \"attempts\": 0,\n        \"…\": \"2 champ(s) de plus\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 2,\n      \"total\": 8,\n      \"pages\": 4,\n      \"hasNext\": true,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"title\": 1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.940Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/LIST — Pagination page 2": {
+  "code": 200,
+  "status": "OK",
+  "ms": 35,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"title\": \"Quiz de compétences — Comptable / Contrôleur·se de gestion\",\n        \"description\": \"Questions de la banque du métier Comptable / Contrôleur·se de gestion.\",\n        \"metier\": \"comptable\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 8,\n        \"passingScore\": 60,\n        \"questionsPerAttempt\": 8,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"actif\",\n        \"source\": \"banque\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T20:00:26.698Z\",\n        \"updatedAt\": \"2026-11-12T20:00:26.698Z\",\n        \"questionCount\": 10,\n        \"skills\": [\n          \"Comptabilité générale\",\n          \"Fiscalité\",\n          \"Contrôle de gestion\",\n          \"… 4 élément(s) de plus\"\n        ],\n        \"id\": \"6af61ada45744869b6dc9a9d\",\n        \"attempts\": 1,\n        \"…\": \"2 champ(s) de plus\"\n      },\n      {\n        \"title\": \"Quiz de compétences — Data Scientist\",\n        \"description\": \"Questions de la banque du métier Data Scientist.\",\n        \"metier\": \"data-scientist\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 8,\n        \"passingScore\": 60,\n        \"questionsPerAttempt\": 8,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"actif\",\n        \"source\": \"banque\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T20:00:26.674Z\",\n        \"updatedAt\": \"2026-11-12T20:00:26.674Z\",\n        \"questionCount\": 10,\n        \"skills\": [\n          \"Machine Learning\",\n          \"Statistiques\",\n          \"Pandas\",\n          \"… 4 élément(s) de plus\"\n        ],\n        \"id\": \"6af61ada45744869b6dc9a6d\",\n        \"attempts\": 2,\n        \"…\": \"2 champ(s) de plus\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 2,\n      \"limit\": 2,\n      \"total\": 8,\n      \"pages\": 4,\n      \"hasNext\": true,\n      \"hasPrev\": true\n    },\n    \"sort\": {\n      \"title\": 1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/SEARCH — Recherche « crud postman » (insensible à la casse et aux accents)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 29,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"title\": \"Quiz CRUD Postman — React & API\",\n        \"description\": \"Quiz créé depuis l'application Postman\",\n        \"metier\": \"dev-fullstack\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 6,\n        \"passingScore\": 50,\n        \"questionsPerAttempt\": 3,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"inactif\",\n        \"source\": \"manuel\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T22:43:35.645Z\",\n        \"updatedAt\": \"2026-11-12T22:43:35.645Z\",\n        \"questionCount\": 3,\n        \"skills\": [\n          \"React\",\n          \"API REST\",\n          \"Git\"\n        ],\n        \"id\": \"6af64117aded5ccd472c17b8\",\n        \"attempts\": 0,\n        \"…\": \"2 champ(s) de plus\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 10,\n      \"total\": 1,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"createdAt\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/FILTER — Métier + statut + difficulté": {
+  "code": 200,
+  "status": "OK",
+  "ms": 27,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"title\": \"Quiz CRUD Postman — React & API\",\n        \"description\": \"Quiz créé depuis l'application Postman\",\n        \"metier\": \"dev-fullstack\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 6,\n        \"passingScore\": 50,\n        \"questionsPerAttempt\": 3,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"inactif\",\n        \"source\": \"manuel\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T22:43:35.645Z\",\n        \"updatedAt\": \"2026-11-12T22:43:35.645Z\",\n        \"questionCount\": 3,\n        \"skills\": [\n          \"React\",\n          \"API REST\",\n          \"Git\"\n        ],\n        \"id\": \"6af64117aded5ccd472c17b8\",\n        \"attempts\": 0,\n        \"…\": \"2 champ(s) de plus\"\n      },\n      {\n        \"title\": \"Quiz UI — Test interface React\",\n        \"description\": \"\",\n        \"metier\": \"dev-fullstack\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 10,\n        \"passingScore\": 60,\n        \"questionsPerAttempt\": 1,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"inactif\",\n        \"source\": \"manuel\",\n        \"createdBy\": \"6af61ad845744869b6dc9a41\",\n        \"createdAt\": \"2026-11-12T21:08:40.151Z\",\n        \"updatedAt\": \"2026-11-12T21:08:40.151Z\",\n        \"questionCount\": 1,\n        \"skills\": [\n          \"React\"\n        ],\n        \"id\": \"6af62ad85abc8f894258b46a\",\n        \"attempts\": 0,\n        \"…\": \"2 champ(s) de plus\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 10,\n      \"total\": 2,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"createdAt\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/SORT — Tri par durée décroissante": {
+  "code": 200,
+  "status": "OK",
+  "ms": 40,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"title\": \"Quiz UI — Test interface React\",\n        \"description\": \"\",\n        \"metier\": \"dev-fullstack\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 10,\n        \"passingScore\": 60,\n        \"questionsPerAttempt\": 1,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"inactif\",\n        \"source\": \"manuel\",\n        \"createdBy\": \"6af61ad845744869b6dc9a41\",\n        \"createdAt\": \"2026-11-12T21:08:40.151Z\",\n        \"updatedAt\": \"2026-11-12T21:08:40.151Z\",\n        \"questionCount\": 1,\n        \"skills\": [\n          \"React\"\n        ],\n        \"id\": \"6af62ad85abc8f894258b46a\",\n        \"attempts\": 0,\n        \"…\": \"2 champ(s) de plus\"\n      },\n      {\n        \"title\": \"Quiz de compétences — Comptable / Contrôleur·se de gestion\",\n        \"description\": \"Questions de la banque du métier Comptable / Contrôleur·se de gestion.\",\n        \"metier\": \"comptable\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 8,\n        \"passingScore\": 60,\n        \"questionsPerAttempt\": 8,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"actif\",\n        \"source\": \"banque\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T20:00:26.698Z\",\n        \"updatedAt\": \"2026-11-12T20:00:26.698Z\",\n        \"questionCount\": 10,\n        \"skills\": [\n          \"Comptabilité générale\",\n          \"Fiscalité\",\n          \"Contrôle de gestion\",\n          \"… 4 élément(s) de plus\"\n        ],\n        \"id\": \"6af61ada45744869b6dc9a9d\",\n        \"attempts\": 1,\n        \"…\": \"2 champ(s) de plus\"\n      },\n      {\n        \"title\": \"Quiz de compétences — Chargé·e de Marketing Digital\",\n        \"description\": \"Questions de la banque du métier Chargé·e de Marketing Digital.\",\n        \"metier\": \"marketing-digital\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 8,\n        \"passingScore\": 60,\n        \"questionsPerAttempt\": 8,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"actif\",\n        \"source\": \"banque\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T20:00:26.693Z\",\n        \"updatedAt\": \"2026-11-12T20:00:26.693Z\",\n        \"questionCount\": 10,\n        \"skills\": [\n          \"SEO\",\n          \"SEA\",\n          \"Google Analytics\",\n          \"… 4 élément(s) de plus\"\n        ],\n        \"id\": \"6af61ada45744869b6dc9a91\",\n        \"attempts\": 0,\n        \"…\": \"2 champ(s) de plus\"\n      },\n      \"… 5 élément(s) de plus\"\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 50,\n      \"total\": 8,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"durationMinutes\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/SORT — Tri par titre croissant": {
+  "code": 200,
+  "status": "OK",
+  "ms": 34,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"title\": \"Quiz CRUD Postman — React & API\",\n        \"description\": \"Quiz créé depuis l'application Postman\",\n        \"metier\": \"dev-fullstack\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 6,\n        \"passingScore\": 50,\n        \"questionsPerAttempt\": 3,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"inactif\",\n        \"source\": \"manuel\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T22:43:35.645Z\",\n        \"updatedAt\": \"2026-11-12T22:43:35.645Z\",\n        \"questionCount\": 3,\n        \"skills\": [\n          \"React\",\n          \"API REST\",\n          \"Git\"\n        ],\n        \"id\": \"6af64117aded5ccd472c17b8\",\n        \"attempts\": 0,\n        \"…\": \"2 champ(s) de plus\"\n      },\n      {\n        \"title\": \"Quiz de compétences — Chargé·e de Marketing Digital\",\n        \"description\": \"Questions de la banque du métier Chargé·e de Marketing Digital.\",\n        \"metier\": \"marketing-digital\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 8,\n        \"passingScore\": 60,\n        \"questionsPerAttempt\": 8,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"actif\",\n        \"source\": \"banque\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T20:00:26.693Z\",\n        \"updatedAt\": \"2026-11-12T20:00:26.693Z\",\n        \"questionCount\": 10,\n        \"skills\": [\n          \"SEO\",\n          \"SEA\",\n          \"Google Analytics\",\n          \"… 4 élément(s) de plus\"\n        ],\n        \"id\": \"6af61ada45744869b6dc9a91\",\n        \"attempts\": 0,\n        \"…\": \"2 champ(s) de plus\"\n      },\n      {\n        \"title\": \"Quiz de compétences — Comptable / Contrôleur·se de gestion\",\n        \"description\": \"Questions de la banque du métier Comptable / Contrôleur·se de gestion.\",\n        \"metier\": \"comptable\",\n        \"job\": null,\n        \"language\": \"fr\",\n        \"difficulty\": \"moyen\",\n        \"durationMinutes\": 8,\n        \"passingScore\": 60,\n        \"questionsPerAttempt\": 8,\n        \"shuffleQuestions\": true,\n        \"maxAttempts\": 1,\n        \"status\": \"actif\",\n        \"source\": \"banque\",\n        \"createdBy\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T20:00:26.698Z\",\n        \"updatedAt\": \"2026-11-12T20:00:26.698Z\",\n        \"questionCount\": 10,\n        \"skills\": [\n          \"Comptabilité générale\",\n          \"Fiscalité\",\n          \"Contrôle de gestion\",\n          \"… 4 élément(s) de plus\"\n        ],\n        \"id\": \"6af61ada45744869b6dc9a9d\",\n        \"attempts\": 1,\n        \"…\": \"2 champ(s) de plus\"\n      },\n      \"… 5 élément(s) de plus\"\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 50,\n      \"total\": 8,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"title\": 1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/STATS — Statistiques des quiz": {
+  "code": 200,
+  "status": "OK",
+  "ms": 77,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"totals\": {\n      \"quizzes\": 8,\n      \"active\": 6,\n      \"questions\": 64,\n      \"attempts\": 8,\n      \"averageScore\": 73,\n      \"passRate\": 75,\n      \"bestScore\": 100\n    },\n    \"byStatus\": [\n      {\n        \"status\": \"actif\",\n        \"count\": 6\n      },\n      {\n        \"status\": \"inactif\",\n        \"count\": 2\n      }\n    ],\n    \"byMetier\": [\n      {\n        \"metier\": \"dev-fullstack\",\n        \"label\": \"Développeur·se Full Stack\",\n        \"count\": 3,\n        \"questions\": 14\n      },\n      {\n        \"metier\": \"designer-ux\",\n        \"label\": \"Designer UX/UI\",\n        \"count\": 1,\n        \"questions\": 10\n      },\n      {\n        \"metier\": \"marketing-digital\",\n        \"label\": \"Chargé·e de Marketing Digital\",\n        \"count\": 1,\n        \"questions\": 10\n      },\n      \"… 3 élément(s) de plus\"\n    ],\n    \"byDifficulty\": [\n      {\n        \"difficulty\": \"moyen\",\n        \"count\": 8\n      }\n    ],\n    \"scoreDistribution\": [\n      {\n        \"range\": \"0-19\",\n        \"count\": 0\n      },\n      {\n        \"range\": \"20-39\",\n        \"count\": 1\n      },\n      {\n        \"range\": \"40-59\",\n        \"count\": 1\n      },\n      \"… 2 élément(s) de plus\"\n    ],\n    \"perSkill\": [\n      {\n        \"skill\": \"JavaScript\",\n        \"successRate\": 89,\n        \"answered\": 9\n      },\n      {\n        \"skill\": \"React\",\n        \"successRate\": 80,\n        \"answered\": 5\n      },\n      {\n        \"skill\": \"Accessibilité\",\n        \"successRate\": 25,\n        \"answered\": 4\n      },\n      \"… 9 élément(s) de plus\"\n    ],\n    \"perQuiz\": [\n      {\n        \"id\": \"6af61ada45744869b6dc9a61\",\n        \"title\": \"Quiz de compétences — Développeur·se Full Stack\",\n        \"attempts\": 3,\n        \"averageScore\": 78,\n        \"passRate\": 67\n      },\n      {\n        \"id\": \"6af61ada45744869b6dc9a6d\",\n        \"title\": \"Quiz de compétences — Data Scientist\",\n        \"attempts\": 2,\n        \"averageScore\": 88,\n        \"passRate\": 100\n      },\n      {\n        \"id\": \"6af61ada45744869b6dc9a85\",\n        \"title\": \"Quiz de compétences — Designer UX/UI\",\n        \"attempts\": 2,\n        \"averageScore\": 56,\n        \"passRate\": 50\n      },\n      \"… 1 élément(s) de plus\"\n    ],\n    \"perMonth\": [\n      {\n        \"month\": \"2026-11\",\n        \"attempts\": 8,\n        \"averageScore\": 73\n      }\n    ]\n  }\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/UPDATE — Modifier (seuil, durée, statut actif)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 55,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Quiz mis à jour.\",\n  \"data\": {\n    \"title\": \"Quiz CRUD Postman — React & API\",\n    \"description\": \"Quiz créé depuis l'application Postman\",\n    \"metier\": \"dev-fullstack\",\n    \"job\": null,\n    \"language\": \"fr\",\n    \"difficulty\": \"moyen\",\n    \"durationMinutes\": 8,\n    \"passingScore\": 60,\n    \"questionsPerAttempt\": 3,\n    \"shuffleQuestions\": true,\n    \"maxAttempts\": 1,\n    \"questions\": [\n      {\n        \"text\": \"Quel hook React exécute un effet après le rendu ?\",\n        \"options\": [\n          \"useMemo\",\n          \"useEffect\",\n          \"useRef\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"useEffect s'exécute après le rendu.\",\n        \"skill\": \"React\",\n        \"points\": 1,\n        \"difficulty\": \"moyen\",\n        \"_id\": \"6af64117aded5ccd472c17b9\"\n      },\n      {\n        \"text\": \"Quel code HTTP pour une création réussie ?\",\n        \"options\": [\n          \"200\",\n          \"201\",\n          \"204\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"\",\n        \"skill\": \"API REST\",\n        \"points\": 1,\n        \"difficulty\": \"moyen\",\n        \"_id\": \"6af64117aded5ccd472c17ba\"\n      },\n      {\n        \"text\": \"Quelle commande Git rejoue des commits sur une autre base ?\",\n        \"options\": [\n          \"merge\",\n          \"rebase\",\n          \"stash\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"\",\n        \"skill\": \"Git\",\n        \"points\": 2,\n        \"difficulty\": \"difficile\",\n        \"_id\": \"6af64117aded5ccd472c17bb\"\n      }\n    ],\n    \"status\": \"actif\",\n    \"source\": \"manuel\",\n    \"createdBy\": \"6af61ad845744869b6dc9a43\",\n    \"createdAt\": \"2026-11-12T22:43:35.645Z\",\n    \"updatedAt\": \"2026-11-12T22:43:36.890Z\",\n    \"questionCount\": 3,\n    \"skills\": [\n      \"React\",\n      \"API REST\",\n      \"Git\"\n    ],\n    \"id\": \"6af64117aded5ccd472c17b8\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/READ — Relire après modification": {
+  "code": 200,
+  "status": "OK",
+  "ms": 46,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"title\": \"Quiz CRUD Postman — React & API\",\n    \"description\": \"Quiz créé depuis l'application Postman\",\n    \"metier\": \"dev-fullstack\",\n    \"job\": null,\n    \"language\": \"fr\",\n    \"difficulty\": \"moyen\",\n    \"durationMinutes\": 8,\n    \"passingScore\": 60,\n    \"questionsPerAttempt\": 3,\n    \"shuffleQuestions\": true,\n    \"maxAttempts\": 1,\n    \"questions\": [\n      {\n        \"text\": \"Quel hook React exécute un effet après le rendu ?\",\n        \"options\": [\n          \"useMemo\",\n          \"useEffect\",\n          \"useRef\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"useEffect s'exécute après le rendu.\",\n        \"skill\": \"React\",\n        \"points\": 1,\n        \"difficulty\": \"moyen\",\n        \"_id\": \"6af64117aded5ccd472c17b9\"\n      },\n      {\n        \"text\": \"Quel code HTTP pour une création réussie ?\",\n        \"options\": [\n          \"200\",\n          \"201\",\n          \"204\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"\",\n        \"skill\": \"API REST\",\n        \"points\": 1,\n        \"difficulty\": \"moyen\",\n        \"_id\": \"6af64117aded5ccd472c17ba\"\n      },\n      {\n        \"text\": \"Quelle commande Git rejoue des commits sur une autre base ?\",\n        \"options\": [\n          \"merge\",\n          \"rebase\",\n          \"stash\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"correctIndex\": 1,\n        \"explanation\": \"\",\n        \"skill\": \"Git\",\n        \"points\": 2,\n        \"difficulty\": \"difficile\",\n        \"_id\": \"6af64117aded5ccd472c17bb\"\n      }\n    ],\n    \"status\": \"actif\",\n    \"source\": \"manuel\",\n    \"createdBy\": {\n      \"firstName\": \"Sarra\",\n      \"lastName\": \"Mansouri\",\n      \"id\": \"6af61ad845744869b6dc9a43\"\n    },\n    \"createdAt\": \"2026-11-12T22:43:35.645Z\",\n    \"updatedAt\": \"2026-11-12T22:43:36.890Z\",\n    \"questionCount\": 3,\n    \"skills\": [\n      \"React\",\n      \"API REST\",\n      \"Git\"\n    ],\n    \"id\": \"6af64117aded5ccd472c17b8\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/DELETE — Supprimer le quiz": {
+  "code": 200,
+  "status": "OK",
+  "ms": 30,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Quiz supprimé.\",\n  \"data\": null\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "1 · Quiz — CRUD (entité 1)/READ — Quiz supprimé introuvable (404)": {
+  "code": 404,
+  "status": "Not Found",
+  "ms": 24,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": false,\n  \"code\": \"QUIZ_NOT_FOUND\",\n  \"message\": \"Quiz introuvable.\"\n}",
+  "at": "2026-11-12T22:43:46.941Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/Préparation — Inscription d'un candidat": {
+  "code": 201,
+  "status": "Created",
+  "ms": 397,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "30;w=3600"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Compte créé.\",\n  \"data\": {\n    \"user\": {\n      \"firstName\": \"Postman\",\n      \"lastName\": \"Crud417345\",\n      \"email\": \"raifguizani10+crud1794523417345@gmail.com\",\n      \"role\": \"candidat\",\n      \"phone\": \"\",\n      \"preferredLanguage\": \"fr\",\n      \"isBlocked\": false,\n      \"lastLoginAt\": null,\n      \"createdAt\": \"2026-11-12T22:43:37.389Z\",\n      \"updatedAt\": \"2026-11-12T22:43:37.389Z\",\n      \"id\": \"6af64119aded5ccd472c18a5\"\n    },\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2NDExOWFkZWQ1Y2NkNDcyYzE4YTUiLCJyb2xlIjoiY2FuZGlkYXQiLCJ0eXBlIjoiYWNjZXNzIiwiaWF0IjoxNzk0NTIzNDE3LCJleHAiOjE3OTQ1MjQzMTcsImlzcyI6InRhbGVudHdhdmUtYXB… (248 caractères)\",\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2NDExOWFkZWQ1Y2NkNDcyYzE4YTUiLCJqdGkiOiJmNjk1MmJmMi01NGIzLTQzZjAtOWY3Zi1lNWI1Mzg1YWFkZDciLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc5NDUyMzQxNywiZXhwIjoxNzk… (285 caractères)\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.942Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/Préparation — Offre « Comptabilité » publiée": {
+  "code": 200,
+  "status": "OK",
+  "ms": 17,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"title\": \"Comptable confirmé·e\",\n        \"metier\": \"comptable\",\n        \"description\": \"Vous assurerez la tenue de la comptabilité générale, les déclarations fiscales et la TVA, les clôtures mensuelles et annuelles dans l'ERP, et produirez les tableaux de bord sous Excel.\",\n        \"requiredSkills\": [\n          \"Comptabilité générale\",\n          \"Fiscalité\",\n          \"Excel\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"niceToHaveSkills\": [\n          \"Contrôle de gestion\"\n        ],\n        \"minExperienceYears\": 3,\n        \"languages\": [\n          \"français\"\n        ],\n        \"location\": \"Sfax\",\n        \"contractType\": \"CDI\",\n        \"remote\": \"sur site\",\n        \"salaryRange\": \"\",\n        \"matchThreshold\": 60,\n        \"status\": \"publiee\",\n        \"recruiter\": \"6af61ad845744869b6dc9a45\",\n        \"createdAt\": \"2026-11-12T20:00:26.658Z\",\n        \"updatedAt\": \"2026-11-12T20:00:26.658Z\",\n        \"id\": \"6af61ada45744869b6dc9a5d\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 1,\n      \"total\": 1,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"createdAt\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.942Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/CREATE — Créer l'entretien (recruteur)": {
+  "code": 201,
+  "status": "Created",
+  "ms": 4388,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Entretien planifié.\",\n  \"data\": {\n    \"meet\": {\n      \"provider\": \"google\",\n      \"link\": \"https://meet.google.com/ybo-nrmr-wik\",\n      \"eventId\": \"a72p45d9flcaeso2kr5226bgp0\"\n    },\n    \"avatar\": {\n      \"name\": \"Nora\",\n      \"voice\": \"feminine\"\n    },\n    \"evaluation\": {\n      \"strengths\": [],\n      \"improvements\": []\n    },\n    \"decision\": {\n      \"value\": \"en_attente\"\n    },\n    \"application\": \"6af64119aded5ccd472c18ad\",\n    \"candidate\": \"6af64119aded5ccd472c18a5\",\n    \"job\": \"6af61ada45744869b6dc9a5d\",\n    \"quizAttempt\": null,\n    \"metier\": \"comptable\",\n    \"title\": \"Entretien — Comptable confirmé·e\",\n    \"candidateName\": \"Postman Crud417345\",\n    \"scheduledAt\": \"2026-11-14T09:00:00.000Z\",\n    \"expiresAt\": \"2026-11-19T22:43:38.228Z\",\n    \"durationMinutes\": 5,\n    \"language\": \"fr\",\n    \"status\": \"planifie\",\n    \"recruiterNotes\": \"Créé depuis Postman (CRUD)\",\n    \"questions\": [],\n    \"answers\": [],\n    \"createdAt\": \"2026-11-12T22:43:42.531Z\",\n    \"…\": \"2 champ(s) de plus\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.942Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/CREATE — Doublon refusé (409)": {
+  "code": 409,
+  "status": "Conflict",
+  "ms": 39,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": false,\n  \"code\": \"INTERVIEW_EXISTS\",\n  \"message\": \"Un entretien existe déjà pour cette candidature.\"\n}",
+  "at": "2026-11-12T22:43:46.942Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/READ — Lire l'entretien créé": {
+  "code": 200,
+  "status": "OK",
+  "ms": 29,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"meet\": {\n      \"provider\": \"google\",\n      \"link\": \"https://meet.google.com/ybo-nrmr-wik\",\n      \"eventId\": \"a72p45d9flcaeso2kr5226bgp0\"\n    },\n    \"avatar\": {\n      \"name\": \"Nora\",\n      \"voice\": \"feminine\"\n    },\n    \"evaluation\": {\n      \"strengths\": [],\n      \"improvements\": []\n    },\n    \"decision\": {\n      \"value\": \"en_attente\"\n    },\n    \"application\": \"6af64119aded5ccd472c18ad\",\n    \"candidate\": {\n      \"firstName\": \"Postman\",\n      \"lastName\": \"Crud417345\",\n      \"email\": \"raifguizani10+crud1794523417345@gmail.com\",\n      \"id\": \"6af64119aded5ccd472c18a5\"\n    },\n    \"job\": {\n      \"title\": \"Comptable confirmé·e\",\n      \"metier\": \"comptable\",\n      \"location\": \"Sfax\",\n      \"id\": \"6af61ada45744869b6dc9a5d\"\n    },\n    \"quizAttempt\": null,\n    \"metier\": \"comptable\",\n    \"title\": \"Entretien — Comptable confirmé·e\",\n    \"candidateName\": \"Postman Crud417345\",\n    \"scheduledAt\": \"2026-11-14T09:00:00.000Z\",\n    \"expiresAt\": \"2026-11-19T22:43:38.228Z\",\n    \"durationMinutes\": 5,\n    \"language\": \"fr\",\n    \"status\": \"planifie\",\n    \"recruiterNotes\": \"Créé depuis Postman (CRUD)\",\n    \"questions\": [],\n    \"answers\": [],\n    \"createdAt\": \"2026-11-12T22:43:42.531Z\",\n    \"…\": \"2 champ(s) de plus\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.942Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/LIST — Pagination page 1 (2 par page)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 29,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"meet\": {\n          \"provider\": \"google\",\n          \"link\": \"https://meet.google.com/ybo-nrmr-wik\",\n          \"eventId\": \"a72p45d9flcaeso2kr5226bgp0\"\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"strengths\": \"[… 0 élément(s)]\",\n          \"improvements\": \"[… 0 élément(s)]\"\n        },\n        \"decision\": {\n          \"value\": \"en_attente\"\n        },\n        \"application\": \"6af64119aded5ccd472c18ad\",\n        \"candidate\": \"6af64119aded5ccd472c18a5\",\n        \"job\": {\n          \"title\": \"Comptable confirmé·e\",\n          \"id\": \"6af61ada45744869b6dc9a5d\"\n        },\n        \"quizAttempt\": null,\n        \"metier\": \"comptable\",\n        \"title\": \"Entretien — Comptable confirmé·e\",\n        \"candidateName\": \"Postman Crud417345\",\n        \"scheduledAt\": \"2026-11-14T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T22:43:38.228Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"planifie\",\n        \"recruiterNotes\": \"Créé depuis Postman (CRUD)\",\n        \"questions\": [],\n        \"answers\": [],\n        \"createdAt\": \"2026-11-12T22:43:42.531Z\",\n        \"…\": \"2 champ(s) de plus\"\n      },\n      {\n        \"meet\": {\n          \"provider\": \"google\",\n          \"link\": \"https://meet.google.com/kya-kgdx-max\",\n          \"eventId\": \"57hvmpj8dfh29l7en6heaor4rs\"\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 83,\n          \"technical\": 79,\n          \"communication\": 78,\n          \"motivation\": 72,\n          \"quiz\": 100,\n          \"recommendation\": \"recommande\",\n          \"summary\": \"La personne candidate présente un parcours solide en data science avec une formation et des compétences pertinentes, mais manque de conviction lors de la présentation de son profil et de ses motivatio… (399 caractères)\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T21:06:36.629Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Tres bon entretien : rendez-vous sur Google Meet au creneau prevu.\",\n          \"by\": \"6af61ad845744869b6dc9a41\",\n          \"at\": \"2026-11-12T21:07:58.364Z\"\n        },\n        \"application\": \"6af629535abc8f894258b327\",\n        \"candidate\": \"6af629416b235113283f8815\",\n        \"job\": {\n          \"title\": \"Data Scientist\",\n          \"id\": \"6af61ada45744869b6dc9a55\"\n        },\n        \"quizAttempt\": \"6af629935abc8f894258b3a1\",\n        \"metier\": \"data-scientist\",\n        \"title\": \"Entretien — Data Scientist\",\n        \"candidateName\": \"Yasmine Meet\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T21:02:11.713Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"createdAt\": \"2026-11-12T21:02:13.386Z\",\n        \"…\": \"4 champ(s) de plus\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 2,\n      \"total\": 9,\n      \"pages\": 5,\n      \"hasNext\": true,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"scheduledAt\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.942Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/LIST — Pagination page 2": {
+  "code": 200,
+  "status": "OK",
+  "ms": 29,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"meet\": {\n          \"provider\": \"jitsi\",\n          \"link\": \"https://meet.jit.si/TalentWaveLive-EntretienDeveloppeurseFu-4752415a2688\",\n          \"eventId\": null\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 25,\n          \"technical\": 0,\n          \"communication\": 12,\n          \"motivation\": 6,\n          \"quiz\": 89,\n          \"recommendation\": \"non_recommande\",\n          \"summary\": \"La personne candidate n'a pas pu présenter son parcours, ses expériences professionnelles ou ses compétences principales. Elle a également échoué à répondre aux questions techniques sur React, Node.js… (264 caractères)\",\n          \"strengths\": \"[… 1 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T20:41:48.128Z\"\n        },\n        \"decision\": {\n          \"value\": \"en_attente\"\n        },\n        \"application\": \"6af620a42d7c7a6bb8f5bd33\",\n        \"candidate\": \"6af620a32d7c7a6bb8f5bd29\",\n        \"job\": {\n          \"title\": \"Développeur·se Full Stack\",\n          \"id\": \"6af61ada45744869b6dc9a53\"\n        },\n        \"quizAttempt\": \"6af620a42d7c7a6bb8f5bd6f\",\n        \"metier\": \"dev-fullstack\",\n        \"title\": \"Entretien — Développeur·se Full Stack\",\n        \"candidateName\": \"Lina Demo\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T20:25:08.515Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\"\n        ],\n        \"createdAt\": \"2026-11-12T20:25:08.520Z\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      {\n        \"meet\": {\n          \"provider\": \"jitsi\",\n          \"link\": \"https://meet.jit.si/TalentWaveLive-EntretienDesignerUXUIOma-def95eb5f396\",\n          \"eventId\": null\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 75,\n          \"technical\": 74,\n          \"communication\": 77,\n          \"motivation\": 70,\n          \"quiz\": 78,\n          \"recommendation\": \"recommande\",\n          \"summary\": \"La personne candidate présente un parcours solide en design numérique avec des expériences professionnelles variées, mais elle manque de précision dans la présentation de son parcours et d'explication… (388 caractères)\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.2,\\\"technical\\\":0.4,\\\"communication\\\":0.25,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T20:09:49.164Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Très bon entretien, nous vous recontactons.\",\n          \"by\": \"6af61ad845744869b6dc9a43\",\n          \"at\": \"2026-11-12T20:09:50.303Z\"\n        },\n        \"application\": \"6af61cc52d7c7a6bb8f5bbcf\",\n        \"candidate\": \"6af61ada45744869b6dc9a51\",\n        \"job\": {\n          \"title\": \"Designer UX/UI\",\n          \"id\": \"6af61ada45744869b6dc9a59\"\n        },\n        \"quizAttempt\": \"6af61cc52d7c7a6bb8f5bc15\",\n        \"metier\": \"designer-ux\",\n        \"title\": \"Entretien — Designer UX/UI\",\n        \"candidateName\": \"Omar Chebbi\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T20:08:37.509Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"createdAt\": \"2026-11-12T20:08:37.513Z\",\n        \"…\": \"4 champ(s) de plus\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 2,\n      \"limit\": 2,\n      \"total\": 9,\n      \"pages\": 5,\n      \"hasNext\": true,\n      \"hasPrev\": true\n    },\n    \"sort\": {\n      \"scheduledAt\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.943Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/SEARCH — Recherche par nom du candidat": {
+  "code": 200,
+  "status": "OK",
+  "ms": 26,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"meet\": {\n          \"provider\": \"google\",\n          \"link\": \"https://meet.google.com/ybo-nrmr-wik\",\n          \"eventId\": \"a72p45d9flcaeso2kr5226bgp0\"\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"strengths\": \"[… 0 élément(s)]\",\n          \"improvements\": \"[… 0 élément(s)]\"\n        },\n        \"decision\": {\n          \"value\": \"en_attente\"\n        },\n        \"application\": \"6af64119aded5ccd472c18ad\",\n        \"candidate\": \"6af64119aded5ccd472c18a5\",\n        \"job\": {\n          \"title\": \"Comptable confirmé·e\",\n          \"id\": \"6af61ada45744869b6dc9a5d\"\n        },\n        \"quizAttempt\": null,\n        \"metier\": \"comptable\",\n        \"title\": \"Entretien — Comptable confirmé·e\",\n        \"candidateName\": \"Postman Crud417345\",\n        \"scheduledAt\": \"2026-11-14T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T22:43:38.228Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"planifie\",\n        \"recruiterNotes\": \"Créé depuis Postman (CRUD)\",\n        \"questions\": [],\n        \"answers\": [],\n        \"createdAt\": \"2026-11-12T22:43:42.531Z\",\n        \"…\": \"2 champ(s) de plus\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 10,\n      \"total\": 1,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"scheduledAt\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.943Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/FILTER — Statut planifié + métier + langue": {
+  "code": 200,
+  "status": "OK",
+  "ms": 20,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"meet\": {\n          \"provider\": \"google\",\n          \"link\": \"https://meet.google.com/ybo-nrmr-wik\",\n          \"eventId\": \"a72p45d9flcaeso2kr5226bgp0\"\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"strengths\": \"[… 0 élément(s)]\",\n          \"improvements\": \"[… 0 élément(s)]\"\n        },\n        \"decision\": {\n          \"value\": \"en_attente\"\n        },\n        \"application\": \"6af64119aded5ccd472c18ad\",\n        \"candidate\": \"6af64119aded5ccd472c18a5\",\n        \"job\": {\n          \"title\": \"Comptable confirmé·e\",\n          \"id\": \"6af61ada45744869b6dc9a5d\"\n        },\n        \"quizAttempt\": null,\n        \"metier\": \"comptable\",\n        \"title\": \"Entretien — Comptable confirmé·e\",\n        \"candidateName\": \"Postman Crud417345\",\n        \"scheduledAt\": \"2026-11-14T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T22:43:38.228Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"planifie\",\n        \"recruiterNotes\": \"Créé depuis Postman (CRUD)\",\n        \"questions\": [],\n        \"answers\": [],\n        \"createdAt\": \"2026-11-12T22:43:42.531Z\",\n        \"…\": \"2 champ(s) de plus\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 10,\n      \"total\": 1,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"scheduledAt\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.943Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/FILTER — Entretiens évalués, note ≥ 50": {
+  "code": 200,
+  "status": "OK",
+  "ms": 35,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"meet\": {\n          \"provider\": \"google\",\n          \"link\": \"https://meet.google.com/kya-kgdx-max\",\n          \"eventId\": \"57hvmpj8dfh29l7en6heaor4rs\"\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 83,\n          \"technical\": 79,\n          \"communication\": 78,\n          \"motivation\": 72,\n          \"quiz\": 100,\n          \"recommendation\": \"recommande\",\n          \"summary\": \"La personne candidate présente un parcours solide en data science avec une formation et des compétences pertinentes, mais manque de conviction lors de la présentation de son profil et de ses motivatio… (399 caractères)\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T21:06:36.629Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Tres bon entretien : rendez-vous sur Google Meet au creneau prevu.\",\n          \"by\": \"6af61ad845744869b6dc9a41\",\n          \"at\": \"2026-11-12T21:07:58.364Z\"\n        },\n        \"application\": \"6af629535abc8f894258b327\",\n        \"candidate\": \"6af629416b235113283f8815\",\n        \"job\": {\n          \"title\": \"Data Scientist\",\n          \"id\": \"6af61ada45744869b6dc9a55\"\n        },\n        \"quizAttempt\": \"6af629935abc8f894258b3a1\",\n        \"metier\": \"data-scientist\",\n        \"title\": \"Entretien — Data Scientist\",\n        \"candidateName\": \"Yasmine Meet\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T21:02:11.713Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"createdAt\": \"2026-11-12T21:02:13.386Z\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      {\n        \"meet\": {\n          \"provider\": \"jitsi\",\n          \"link\": \"https://meet.jit.si/TalentWaveLive-EntretienDesignerUXUIOma-def95eb5f396\",\n          \"eventId\": null\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 75,\n          \"technical\": 74,\n          \"communication\": 77,\n          \"motivation\": 70,\n          \"quiz\": 78,\n          \"recommendation\": \"recommande\",\n          \"summary\": \"La personne candidate présente un parcours solide en design numérique avec des expériences professionnelles variées, mais elle manque de précision dans la présentation de son parcours et d'explication… (388 caractères)\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.2,\\\"technical\\\":0.4,\\\"communication\\\":0.25,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T20:09:49.164Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Très bon entretien, nous vous recontactons.\",\n          \"by\": \"6af61ad845744869b6dc9a43\",\n          \"at\": \"2026-11-12T20:09:50.303Z\"\n        },\n        \"application\": \"6af61cc52d7c7a6bb8f5bbcf\",\n        \"candidate\": \"6af61ada45744869b6dc9a51\",\n        \"job\": {\n          \"title\": \"Designer UX/UI\",\n          \"id\": \"6af61ada45744869b6dc9a59\"\n        },\n        \"quizAttempt\": \"6af61cc52d7c7a6bb8f5bc15\",\n        \"metier\": \"designer-ux\",\n        \"title\": \"Entretien — Designer UX/UI\",\n        \"candidateName\": \"Omar Chebbi\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T20:08:37.509Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"createdAt\": \"2026-11-12T20:08:37.513Z\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      {\n        \"meet\": {\n          \"provider\": \"jitsi\",\n          \"link\": \"https://meet.jit.si/TalentWaveLive-EntretienDesignerUXUIIne-075e9ea41258\",\n          \"eventId\": null\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 61,\n          \"technical\": 63,\n          \"communication\": 77,\n          \"motivation\": 68,\n          \"quiz\": 33,\n          \"recommendation\": \"a_revoir\",\n          \"summary\": \"L'entretien a duré 5 minutes. Le candidat a présenté ses expériences professionnelles, ses compétences et pourquoi il correspond au poste. Il a également abordé la question d'accès universel dans le d… (206 caractères)\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.2,\\\"technical\\\":0.4,\\\"communication\\\":0.25,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T20:03:14.707Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Très bon entretien, nous vous recontactons.\",\n          \"by\": \"6af61ad845744869b6dc9a43\",\n          \"at\": \"2026-11-12T20:03:16.064Z\"\n        },\n        \"application\": \"6af61b1aec04976f02444fd8\",\n        \"candidate\": \"6af61ad945744869b6dc9a4b\",\n        \"job\": {\n          \"title\": \"Designer UX/UI\",\n          \"id\": \"6af61ada45744869b6dc9a59\"\n        },\n        \"quizAttempt\": \"6af61b1dec04976f0244501e\",\n        \"metier\": \"designer-ux\",\n        \"title\": \"Entretien — Designer UX/UI\",\n        \"candidateName\": \"Ines Gharbi\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T20:01:32.386Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"createdAt\": \"2026-11-12T20:01:32.437Z\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      \"… 3 élément(s) de plus\"\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 10,\n      \"total\": 6,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"scheduledAt\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.943Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/SORT — Tri par note décroissante": {
+  "code": 200,
+  "status": "OK",
+  "ms": 31,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"meet\": {\n          \"provider\": \"google\",\n          \"link\": \"https://meet.google.com/kya-kgdx-max\",\n          \"eventId\": \"57hvmpj8dfh29l7en6heaor4rs\"\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 83,\n          \"technical\": 79,\n          \"communication\": 78,\n          \"motivation\": 72,\n          \"quiz\": 100,\n          \"recommendation\": \"recommande\",\n          \"summary\": \"La personne candidate présente un parcours solide en data science avec une formation et des compétences pertinentes, mais manque de conviction lors de la présentation de son profil et de ses motivatio… (399 caractères)\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T21:06:36.629Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Tres bon entretien : rendez-vous sur Google Meet au creneau prevu.\",\n          \"by\": \"6af61ad845744869b6dc9a41\",\n          \"at\": \"2026-11-12T21:07:58.364Z\"\n        },\n        \"application\": \"6af629535abc8f894258b327\",\n        \"candidate\": \"6af629416b235113283f8815\",\n        \"job\": {\n          \"title\": \"Data Scientist\",\n          \"id\": \"6af61ada45744869b6dc9a55\"\n        },\n        \"quizAttempt\": \"6af629935abc8f894258b3a1\",\n        \"metier\": \"data-scientist\",\n        \"title\": \"Entretien — Data Scientist\",\n        \"candidateName\": \"Yasmine Meet\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T21:02:11.713Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"createdAt\": \"2026-11-12T21:02:13.386Z\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      {\n        \"meet\": {\n          \"provider\": \"jitsi\",\n          \"link\": \"https://meet.jit.si/TalentWaveLive-demo-b6dc9aa9\"\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 83,\n          \"technical\": 82,\n          \"communication\": 78,\n          \"motivation\": 81,\n          \"quiz\": 89,\n          \"recommendation\": \"recommande\",\n          \"summary\": \"Note globale 83/100 (quiz 89, technique 82, communication 78, motivation 81). 5/5 questions ont reçu une réponse.\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 2 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse gabarit\",\n          \"evaluatedAt\": \"2026-11-12T20:00:28.551Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Excellent entretien technique.\",\n          \"by\": \"6af61ad845744869b6dc9a43\",\n          \"at\": \"2026-11-12T20:00:29.299Z\"\n        },\n        \"application\": \"6af61ada45744869b6dc9aa9\",\n        \"candidate\": \"6af61ad845744869b6dc9a47\",\n        \"job\": {\n          \"title\": \"Développeur·se Full Stack\",\n          \"id\": \"6af61ada45744869b6dc9a53\"\n        },\n        \"quizAttempt\": \"6af61adc45744869b6dc9abe\",\n        \"metier\": \"dev-fullstack\",\n        \"title\": \"Entretien — Développeur·se Full Stack\",\n        \"candidateName\": \"Amira Ben Salah\",\n        \"scheduledAt\": \"2026-11-01T20:00:28.243Z\",\n        \"expiresAt\": \"2026-11-08T20:00:28.243Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"status\": \"evalue\",\n        \"startedAt\": \"2026-11-01T21:00:28.243Z\",\n        \"endedAt\": \"2026-11-01T21:05:18.243Z\",\n        \"recruiterNotes\": \"\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      {\n        \"meet\": {\n          \"provider\": \"jitsi\",\n          \"link\": \"https://meet.jit.si/TalentWaveLive-EntretienDesignerUXUIOma-def95eb5f396\",\n          \"eventId\": null\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 75,\n          \"technical\": 74,\n          \"communication\": 77,\n          \"motivation\": 70,\n          \"quiz\": 78,\n          \"recommendation\": \"recommande\",\n          \"summary\": \"La personne candidate présente un parcours solide en design numérique avec des expériences professionnelles variées, mais elle manque de précision dans la présentation de son parcours et d'explication… (388 caractères)\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.2,\\\"technical\\\":0.4,\\\"communication\\\":0.25,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T20:09:49.164Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Très bon entretien, nous vous recontactons.\",\n          \"by\": \"6af61ad845744869b6dc9a43\",\n          \"at\": \"2026-11-12T20:09:50.303Z\"\n        },\n        \"application\": \"6af61cc52d7c7a6bb8f5bbcf\",\n        \"candidate\": \"6af61ada45744869b6dc9a51\",\n        \"job\": {\n          \"title\": \"Designer UX/UI\",\n          \"id\": \"6af61ada45744869b6dc9a59\"\n        },\n        \"quizAttempt\": \"6af61cc52d7c7a6bb8f5bc15\",\n        \"metier\": \"designer-ux\",\n        \"title\": \"Entretien — Designer UX/UI\",\n        \"candidateName\": \"Omar Chebbi\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T20:08:37.509Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"createdAt\": \"2026-11-12T20:08:37.513Z\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      \"… 5 élément(s) de plus\"\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 50,\n      \"total\": 8,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"evaluation.overall\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.944Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/SORT — Tri par nom du candidat": {
+  "code": 200,
+  "status": "OK",
+  "ms": 34,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"meet\": {\n          \"provider\": \"jitsi\",\n          \"link\": \"https://meet.jit.si/TalentWaveLive-demo-b6dc9aa9\"\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 83,\n          \"technical\": 82,\n          \"communication\": 78,\n          \"motivation\": 81,\n          \"quiz\": 89,\n          \"recommendation\": \"recommande\",\n          \"summary\": \"Note globale 83/100 (quiz 89, technique 82, communication 78, motivation 81). 5/5 questions ont reçu une réponse.\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 2 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse gabarit\",\n          \"evaluatedAt\": \"2026-11-12T20:00:28.551Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Excellent entretien technique.\",\n          \"by\": \"6af61ad845744869b6dc9a43\",\n          \"at\": \"2026-11-12T20:00:29.299Z\"\n        },\n        \"application\": \"6af61ada45744869b6dc9aa9\",\n        \"candidate\": \"6af61ad845744869b6dc9a47\",\n        \"job\": {\n          \"title\": \"Développeur·se Full Stack\",\n          \"id\": \"6af61ada45744869b6dc9a53\"\n        },\n        \"quizAttempt\": \"6af61adc45744869b6dc9abe\",\n        \"metier\": \"dev-fullstack\",\n        \"title\": \"Entretien — Développeur·se Full Stack\",\n        \"candidateName\": \"Amira Ben Salah\",\n        \"scheduledAt\": \"2026-11-01T20:00:28.243Z\",\n        \"expiresAt\": \"2026-11-08T20:00:28.243Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"status\": \"evalue\",\n        \"startedAt\": \"2026-11-01T21:00:28.243Z\",\n        \"endedAt\": \"2026-11-01T21:05:18.243Z\",\n        \"recruiterNotes\": \"\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      {\n        \"meet\": {\n          \"provider\": \"jitsi\",\n          \"link\": \"https://meet.jit.si/TalentWaveLive-EntretienDesignerUXUIIne-075e9ea41258\",\n          \"eventId\": null\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 61,\n          \"technical\": 63,\n          \"communication\": 77,\n          \"motivation\": 68,\n          \"quiz\": 33,\n          \"recommendation\": \"a_revoir\",\n          \"summary\": \"L'entretien a duré 5 minutes. Le candidat a présenté ses expériences professionnelles, ses compétences et pourquoi il correspond au poste. Il a également abordé la question d'accès universel dans le d… (206 caractères)\",\n          \"strengths\": \"[… 3 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.2,\\\"technical\\\":0.4,\\\"communication\\\":0.25,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T20:03:14.707Z\"\n        },\n        \"decision\": {\n          \"value\": \"retenu\",\n          \"comment\": \"Très bon entretien, nous vous recontactons.\",\n          \"by\": \"6af61ad845744869b6dc9a43\",\n          \"at\": \"2026-11-12T20:03:16.064Z\"\n        },\n        \"application\": \"6af61b1aec04976f02444fd8\",\n        \"candidate\": \"6af61ad945744869b6dc9a4b\",\n        \"job\": {\n          \"title\": \"Designer UX/UI\",\n          \"id\": \"6af61ada45744869b6dc9a59\"\n        },\n        \"quizAttempt\": \"6af61b1dec04976f0244501e\",\n        \"metier\": \"designer-ux\",\n        \"title\": \"Entretien — Designer UX/UI\",\n        \"candidateName\": \"Ines Gharbi\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T20:01:32.386Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"{… 10 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"createdAt\": \"2026-11-12T20:01:32.437Z\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      {\n        \"meet\": {\n          \"provider\": \"jitsi\",\n          \"link\": \"https://meet.jit.si/TalentWaveLive-EntretienDeveloppeurseFu-4752415a2688\",\n          \"eventId\": null\n        },\n        \"avatar\": {\n          \"name\": \"Nora\",\n          \"voice\": \"feminine\"\n        },\n        \"evaluation\": {\n          \"weights\": \"{… 4 champ(s)}\",\n          \"overall\": 25,\n          \"technical\": 0,\n          \"communication\": 12,\n          \"motivation\": 6,\n          \"quiz\": 89,\n          \"recommendation\": \"non_recommande\",\n          \"summary\": \"La personne candidate n'a pas pu présenter son parcours, ses expériences professionnelles ou ses compétences principales. Elle a également échoué à répondre aux questions techniques sur React, Node.js… (264 caractères)\",\n          \"strengths\": \"[… 1 élément(s)]\",\n          \"improvements\": \"[… 3 élément(s)]\",\n          \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse LLM\",\n          \"evaluatedAt\": \"2026-11-12T20:41:48.128Z\"\n        },\n        \"decision\": {\n          \"value\": \"en_attente\"\n        },\n        \"application\": \"6af620a42d7c7a6bb8f5bd33\",\n        \"candidate\": \"6af620a32d7c7a6bb8f5bd29\",\n        \"job\": {\n          \"title\": \"Développeur·se Full Stack\",\n          \"id\": \"6af61ada45744869b6dc9a53\"\n        },\n        \"quizAttempt\": \"6af620a42d7c7a6bb8f5bd6f\",\n        \"metier\": \"dev-fullstack\",\n        \"title\": \"Entretien — Développeur·se Full Stack\",\n        \"candidateName\": \"Lina Demo\",\n        \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n        \"expiresAt\": \"2026-11-19T20:25:08.515Z\",\n        \"durationMinutes\": 5,\n        \"language\": \"fr\",\n        \"status\": \"evalue\",\n        \"recruiterNotes\": \"\",\n        \"questions\": [\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"{… 6 champ(s)}\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"answers\": [\n          \"{… 10 champ(s)}\"\n        ],\n        \"createdAt\": \"2026-11-12T20:25:08.520Z\",\n        \"…\": \"4 champ(s) de plus\"\n      },\n      \"… 6 élément(s) de plus\"\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 50,\n      \"total\": 9,\n      \"pages\": 1,\n      \"hasNext\": false,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"candidateName\": 1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T22:43:46.945Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/STATS — Statistiques des entretiens": {
+  "code": 200,
+  "status": "OK",
+  "ms": 23,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"totals\": {\n      \"interviews\": 9,\n      \"evaluated\": 8,\n      \"completionRate\": 89,\n      \"averageOverall\": 62,\n      \"averageTechnical\": 57,\n      \"averageCommunication\": 65,\n      \"averageMotivation\": 55,\n      \"averageQuiz\": 73,\n      \"averageDurationSec\": 284,\n      \"retained\": 4\n    },\n    \"byStatus\": [\n      {\n        \"status\": \"evalue\",\n        \"count\": 8\n      },\n      {\n        \"status\": \"planifie\",\n        \"count\": 1\n      }\n    ],\n    \"byRecommendation\": [\n      {\n        \"recommendation\": \"non_recommande\",\n        \"count\": 2\n      },\n      {\n        \"recommendation\": \"a_revoir\",\n        \"count\": 2\n      },\n      {\n        \"recommendation\": \"recommande\",\n        \"count\": 4\n      }\n    ],\n    \"byDecision\": [\n      {\n        \"decision\": \"en_attente\",\n        \"count\": 4\n      },\n      {\n        \"decision\": \"retenu\",\n        \"count\": 4\n      }\n    ],\n    \"byLanguage\": [\n      {\n        \"language\": \"inconnue\",\n        \"answers\": 1\n      },\n      {\n        \"language\": \"fr\",\n        \"answers\": 32\n      },\n      {\n        \"language\": \"en\",\n        \"answers\": 3\n      }\n    ],\n    \"byMetier\": [\n      {\n        \"metier\": \"dev-fullstack\",\n        \"label\": \"Développeur·se Full Stack\",\n        \"count\": 3,\n        \"averageOverall\": 51\n      },\n      {\n        \"metier\": \"comptable\",\n        \"label\": \"Comptable / Contrôleur·se de gestion\",\n        \"count\": 1,\n        \"averageOverall\": 51\n      },\n      {\n        \"metier\": \"data-scientist\",\n        \"label\": \"Data Scientist\",\n        \"count\": 2,\n        \"averageOverall\": 79\n      },\n      \"… 1 élément(s) de plus\"\n    ],\n    \"byProvider\": [\n      {\n        \"provider\": \"jitsi\",\n        \"count\": 7\n      },\n      {\n        \"provider\": \"google\",\n        \"count\": 2\n      }\n    ],\n    \"perQuestionType\": [\n      {\n        \"type\": \"motivation\",\n        \"averageScore\": 70,\n        \"answers\": 7\n      },\n      {\n        \"type\": \"situation\",\n        \"averageScore\": 57,\n        \"answers\": 7\n      },\n      {\n        \"type\": \"technique\",\n        \"averageScore\": 64,\n        \"answers\": 14\n      },\n      \"… 1 élément(s) de plus\"\n    ],\n    \"perMonth\": [\n      {\n        \"month\": \"2026-10\",\n        \"planned\": 3,\n        \"evaluated\": 3,\n        \"averageOverall\": 57\n      },\n      {\n        \"month\": \"2026-11\",\n        \"planned\": 6,\n        \"evaluated\": 5,\n        \"averageOverall\": 65\n      }\n    ],\n    \"scoreDistribution\": [\n      {\n        \"range\": \"0-19\",\n        \"count\": 0\n      },\n      {\n        \"range\": \"20-39\",\n        \"count\": 1\n      },\n      {\n        \"range\": \"40-59\",\n        \"count\": 2\n      },\n      \"… 2 élément(s) de plus\"\n    ]\n  }\n}",
+  "at": "2026-11-12T22:43:46.945Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/UPDATE — Modifier (langue, durée, notes du recruteur)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 38,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Entretien mis à jour.\",\n  \"data\": {\n    \"meet\": {\n      \"provider\": \"google\",\n      \"link\": \"https://meet.google.com/ybo-nrmr-wik\",\n      \"eventId\": \"a72p45d9flcaeso2kr5226bgp0\"\n    },\n    \"avatar\": {\n      \"name\": \"Nora\",\n      \"voice\": \"feminine\"\n    },\n    \"evaluation\": {\n      \"strengths\": [],\n      \"improvements\": []\n    },\n    \"decision\": {\n      \"value\": \"en_attente\"\n    },\n    \"application\": \"6af64119aded5ccd472c18ad\",\n    \"candidate\": \"6af64119aded5ccd472c18a5\",\n    \"job\": \"6af61ada45744869b6dc9a5d\",\n    \"quizAttempt\": null,\n    \"metier\": \"comptable\",\n    \"title\": \"Entretien — Comptable confirmé·e\",\n    \"candidateName\": \"Postman Crud417345\",\n    \"scheduledAt\": \"2026-11-14T09:00:00.000Z\",\n    \"expiresAt\": \"2026-11-19T22:43:38.228Z\",\n    \"durationMinutes\": 10,\n    \"language\": \"en\",\n    \"status\": \"planifie\",\n    \"recruiterNotes\": \"Modifié depuis Postman : entretien en anglais, 10 minutes.\",\n    \"questions\": [],\n    \"answers\": [],\n    \"createdAt\": \"2026-11-12T22:43:42.531Z\",\n    \"…\": \"2 champ(s) de plus\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.945Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/READ — Relire après modification": {
+  "code": 200,
+  "status": "OK",
+  "ms": 49,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"meet\": {\n      \"provider\": \"google\",\n      \"link\": \"https://meet.google.com/ybo-nrmr-wik\",\n      \"eventId\": \"a72p45d9flcaeso2kr5226bgp0\"\n    },\n    \"avatar\": {\n      \"name\": \"Nora\",\n      \"voice\": \"feminine\"\n    },\n    \"evaluation\": {\n      \"strengths\": [],\n      \"improvements\": []\n    },\n    \"decision\": {\n      \"value\": \"en_attente\"\n    },\n    \"application\": \"6af64119aded5ccd472c18ad\",\n    \"candidate\": {\n      \"firstName\": \"Postman\",\n      \"lastName\": \"Crud417345\",\n      \"email\": \"raifguizani10+crud1794523417345@gmail.com\",\n      \"id\": \"6af64119aded5ccd472c18a5\"\n    },\n    \"job\": {\n      \"title\": \"Comptable confirmé·e\",\n      \"metier\": \"comptable\",\n      \"location\": \"Sfax\",\n      \"id\": \"6af61ada45744869b6dc9a5d\"\n    },\n    \"quizAttempt\": null,\n    \"metier\": \"comptable\",\n    \"title\": \"Entretien — Comptable confirmé·e\",\n    \"candidateName\": \"Postman Crud417345\",\n    \"scheduledAt\": \"2026-11-14T09:00:00.000Z\",\n    \"expiresAt\": \"2026-11-19T22:43:38.228Z\",\n    \"durationMinutes\": 10,\n    \"language\": \"en\",\n    \"status\": \"planifie\",\n    \"recruiterNotes\": \"Modifié depuis Postman : entretien en anglais, 10 minutes.\",\n    \"questions\": [],\n    \"answers\": [],\n    \"createdAt\": \"2026-11-12T22:43:42.531Z\",\n    \"…\": \"2 champ(s) de plus\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.945Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/DELETE — Supprimer l'entretien": {
+  "code": 200,
+  "status": "OK",
+  "ms": 1378,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Entretien supprimé.\",\n  \"data\": null\n}",
+  "at": "2026-11-12T22:43:46.945Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/READ — Entretien supprimé introuvable (404)": {
+  "code": 404,
+  "status": "Not Found",
+  "ms": 31,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": false,\n  \"code\": \"INTERVIEW_NOT_FOUND\",\n  \"message\": \"Entretien introuvable.\"\n}",
+  "at": "2026-11-12T22:43:46.945Z"
+ },
+ "2 · Entretiens — CRUD (entité 2)/Préparation — Le candidat postule avec son CV PDF": {
+  "code": 201,
+  "status": "Created",
+  "ms": 89,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "20;w=600"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Score de correspondance 33/100 : votre candidature n'atteint pas le seuil de ce poste. Un e-mail explique pourquoi.\",\n  \"data\": {\n    \"matching\": {\n      \"breakdown\": {\n        \"skills\": 0,\n        \"semantic\": 12,\n        \"experience\": 100,\n        \"languages\": 100\n      },\n      \"score\": 33,\n      \"matchedSkills\": [],\n      \"missingSkills\": [\n        \"Comptabilité générale\",\n        \"Fiscalité\",\n        \"Excel\",\n        \"… 1 élément(s) de plus\"\n      ],\n      \"experienceYears\": 5,\n      \"languagesFound\": [\n        \"français\",\n        \"anglais\",\n        \"arabe\"\n      ],\n      \"explanation\": [\n        \"+ 0 compétence obligatoire sur 4, chacune prouvée par une phrase du CV.\",\n        \"– Comptabilité générale, Fiscalité, Excel demandés mais absents.\",\n        \"Proximité du parcours avec la description du poste : 12/100.\"\n      ],\n      \"method\": \"règles + sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2\",\n      \"computedAt\": \"2026-11-12T22:43:38.028Z\"\n    },\n    \"candidate\": \"6af64119aded5ccd472c18a5\",\n    \"job\": {\n      \"title\": \"Comptable confirmé·e\",\n      \"metier\": \"comptable\",\n      \"location\": \"Sfax\",\n      \"contractType\": \"CDI\",\n      \"matchThreshold\": 60,\n      \"id\": \"6af61ada45744869b6dc9a5d\"\n    },\n    \"coverLetter\": \"Candidature de test CRUD depuis Postman.\",\n    \"cvFileName\": \"CV_Postman.pdf\",\n    \"status\": \"refusee\",\n    \"quiz\": null,\n    \"quizAttempt\": null,\n    \"interview\": null,\n    \"timeline\": [\n      {\n        \"at\": \"2026-11-12T22:43:37.996Z\",\n        \"status\": \"soumise\",\n        \"note\": \"Candidature déposée\"\n      },\n      {\n        \"at\": \"2026-11-12T22:43:38.035Z\",\n        \"status\": \"refusee\",\n        \"note\": \"Score 33 < seuil 60\"\n      }\n    ],\n    \"createdAt\": \"2026-11-12T22:43:38.032Z\",\n    \"updatedAt\": \"2026-11-12T22:43:38.036Z\",\n    \"id\": \"6af64119aded5ccd472c18ad\"\n  }\n}",
+  "at": "2026-11-12T22:43:46.942Z"
+ },
+ "3 · Chatbot/Connexion candidat (Amira, candidature existante)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 419,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "10;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Connexion réussie.\",\n  \"data\": {\n    \"user\": {\n      \"firstName\": \"Amira\",\n      \"lastName\": \"Ben Salah\",\n      \"email\": \"raifguizani10+live-candidat1@gmail.com\",\n      \"role\": \"candidat\",\n      \"phone\": \"\",\n      \"preferredLanguage\": \"fr\",\n      \"isBlocked\": false,\n      \"lastLoginAt\": \"2026-11-12T21:20:18.223Z\",\n      \"createdAt\": \"2026-11-12T20:00:24.963Z\",\n      \"updatedAt\": \"2026-11-12T21:20:18.223Z\",\n      \"id\": \"6af61ad845744869b6dc9a47\"\n    },\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2MWFkODQ1NzQ0ODY5YjZkYzlhNDciLCJyb2xlIjoiY2FuZGlkYXQiLCJ0eXBlIjoiYWNjZXNzIiwiaWF0IjoxNzk0NTIzOTI4LCJleHAiOjE3OTQ1MjQ4MjgsImlzcyI6InRhbGVudHdhdmUtYXB… (248 caractères)\",\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2MWFkODQ1NzQ0ODY5YjZkYzlhNDciLCJqdGkiOiJiNmY2MWJkMC0yMWFiLTQwMjItOGIzNS0wOTQwNmU3NjBjZTciLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc5NDUyMzkyOCwiZXhwIjoxNzk… (285 caractères)\"\n  }\n}",
+  "at": "2026-11-12T22:52:41.378Z"
+ },
+ "3 · Chatbot/Message — « Où en est ma candidature ? »": {
+  "code": 200,
+  "status": "OK",
+  "ms": 4907,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "30;w=300"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"answer\": \"Tu as été retenue pour l'offre de Développeur·se Full Stack. Ta note d'entretien est de 93/100. Tu recevras un e-mail avec la décision du recruteur dans les prochaines heures.\",\n    \"sources\": [\n      {\n        \"n\": 1,\n        \"title\": \"Résultats et décision\",\n        \"score\": 0.0328\n      },\n      {\n        \"n\": 2,\n        \"title\": \"Visioconférence Google Meet\",\n        \"score\": 0.0328\n      },\n      {\n        \"n\": 3,\n        \"title\": \"Réussir sa présentation\",\n        \"score\": 0.0321\n      },\n      \"… 1 élément(s) de plus\"\n    ],\n    \"tools\": [\n      {\n        \"tool\": \"mes_candidatures\",\n        \"args\": {},\n        \"ms\": 8\n      }\n    ],\n    \"mode\": \"agent\",\n    \"model\": \"llama3.1:8b\",\n    \"durationMs\": 4876\n  }\n}",
+  "at": "2026-11-12T22:52:41.379Z"
+ },
+ "3 · Chatbot/Message — suite de conversation (historique)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 7038,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "30;w=300"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"answer\": \"Pour la suite, je te recommande de préparer les questions techniques pour le métier de Développeur·se Full Stack. Tu peux consulter [1] Préparer l'entretien — Chargé·e de Marketing Digital et [2] Prép… (606 caractères)\",\n    \"sources\": [\n      {\n        \"n\": 1,\n        \"title\": \"Préparer l'entretien — Chargé·e de Marketing Digital\",\n        \"score\": 0.0328\n      },\n      {\n        \"n\": 2,\n        \"title\": \"Préparer l'entretien — Data Scientist\",\n        \"score\": 0.0317\n      },\n      {\n        \"n\": 3,\n        \"title\": \"L'entretien vidéo avec l'avatar\",\n        \"score\": 0.0313\n      },\n      \"… 1 élément(s) de plus\"\n    ],\n    \"tools\": [\n      {\n        \"tool\": \"mes_candidatures\",\n        \"args\": {},\n        \"ms\": 5\n      }\n    ],\n    \"mode\": \"agent\",\n    \"model\": \"llama3.1:8b\",\n    \"durationMs\": 7006\n  }\n}",
+  "at": "2026-11-12T22:52:41.380Z"
+ },
+ "3 · Chatbot/Message — question sur le fonctionnement": {
+  "code": 200,
+  "status": "OK",
+  "ms": 5964,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "30;w=300"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"answer\": \"L'entretien vidéo avec l'avatar dure 5 minutes. Un avatar IA pose 5 questions à voix haute : présentation, deux questions techniques, une situation vécue et la motivation. Après chaque question, un co… (541 caractères)\",\n    \"sources\": [\n      {\n        \"n\": 1,\n        \"title\": \"Le quiz de compétences\",\n        \"score\": 0.0331\n      },\n      {\n        \"n\": 2,\n        \"title\": \"L'entretien vidéo avec l'avatar\",\n        \"score\": 0.0331\n      },\n      {\n        \"n\": 3,\n        \"title\": \"Visioconférence Google Meet\",\n        \"score\": 0.0323\n      },\n      \"… 1 élément(s) de plus\"\n    ],\n    \"tools\": [\n      {\n        \"tool\": \"mon_entretien\",\n        \"args\": {\n          \"candidat\": \"Amira Ben Salah\",\n          \"details\": \"false\"\n        },\n        \"ms\": 7\n      }\n    ],\n    \"mode\": \"agent\",\n    \"model\": \"llama3.1:8b\",\n    \"durationMs\": 5928\n  }\n}",
+  "at": "2026-11-12T22:52:41.380Z"
+ },
+ "3 · Chatbot/Entraînement — Question d'entretien du métier": {
+  "code": 200,
+  "status": "OK",
+  "ms": 24,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"metier\": \"Développeur·se Full Stack\",\n    \"type\": \"technique\",\n    \"question\": \"Une requête sur votre base devient lente en production. Quelle est votre démarche ?\",\n    \"competence\": \"MongoDB\"\n  }\n}",
+  "at": "2026-11-12T22:52:41.380Z"
+ },
+ "3 · Chatbot/Entraînement — Évaluer ma réponse": {
+  "code": 200,
+  "status": "OK",
+  "ms": 5903,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "30;w=300"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"note\": 35,\n    \"points_couverts\": [\n      \"mettre en cache si pertinent\"\n    ],\n    \"points_a_developper\": [\n      \"mesurer et identifier la requête lente (logs, explain)\",\n      \"ajouter ou corriger un index adapté\",\n      \"réduire les données renvoyées (projection, pagination)\",\n      \"… 1 élément(s) de plus\"\n    ],\n    \"conseil\": \"Vous avez bien identifié l'importance de mesurer et d'identifier la requête lente en utilisant les logs. Cependant, votre réponse ne répond pas aux autres points attendus de la grille.\",\n    \"methode\": \"grille sémantique (MiniLM) + juge LLM (llama3.1)\"\n  }\n}",
+  "at": "2026-11-12T22:52:41.380Z"
+ },
+ "3 · Chatbot/Erreur — Message vide (422)": {
+  "code": 422,
+  "status": "Unprocessable Entity",
+  "ms": 34,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "30;w=300"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": false,\n  \"code\": \"VALIDATION_ERROR\",\n  \"message\": \"Les données envoyées sont invalides.\",\n  \"errors\": [\n    {\n      \"field\": \"message\",\n      \"message\": \"Le message est obligatoire.\"\n    }\n  ]\n}",
+  "at": "2026-11-12T22:52:41.380Z"
+ },
+ "3 · Chatbot/Erreur — Sans connexion (401)": {
+  "code": 401,
+  "status": "Unauthorized",
+  "ms": 33,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": false,\n  \"code\": \"AUTH_REQUIRED\",\n  \"message\": \"Authentification requise.\"\n}",
+  "at": "2026-11-12T22:52:41.380Z"
+ },
+ "3 · Chatbot/Erreur — Métier inconnu pour l'entraînement (422)": {
+  "code": 422,
+  "status": "Unprocessable Entity",
+  "ms": 28,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": false,\n  \"code\": \"VALIDATION_ERROR\",\n  \"message\": \"Les données envoyées sont invalides.\",\n  \"errors\": [\n    {\n      \"field\": \"metier\",\n      \"message\": \"metier : valeur non autorisée.\"\n    }\n  ]\n}",
+  "at": "2026-11-12T22:52:41.380Z"
+ },
+ "4 · Processus d'entretien/0. Connexion recruteur (pour créer l'entretien si besoin et décider)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 426,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "10;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Connexion réussie.\",\n  \"data\": {\n    \"user\": {\n      \"firstName\": \"Sarra\",\n      \"lastName\": \"Mansouri\",\n      \"email\": \"raifguizani10+live-rh@gmail.com\",\n      \"role\": \"recruteur\",\n      \"phone\": \"\",\n      \"preferredLanguage\": \"fr\",\n      \"isBlocked\": false,\n      \"lastLoginAt\": \"2026-11-12T22:54:27.641Z\",\n      \"createdAt\": \"2026-11-12T20:00:24.403Z\",\n      \"updatedAt\": \"2026-11-12T22:54:27.642Z\",\n      \"id\": \"6af61ad845744869b6dc9a43\"\n    },\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2MWFkODQ1NzQ0ODY5YjZkYzlhNDMiLCJyb2xlIjoicmVjcnV0ZXVyIiwidHlwZSI6ImFjY2VzcyIsImlhdCI6MTc5NDUyNDM2NiwiZXhwIjoxNzk0NTI1MjY2LCJpc3MiOiJ0YWxlbnR3YXZlLWF… (249 caractères)\",\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2MWFkODQ1NzQ0ODY5YjZkYzlhNDMiLCJqdGkiOiIwMzdmZDE3YS02ZTE3LTQxMDAtOTRmOS01OGIwNTYxNzQzZmMiLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc5NDUyNDM2NiwiZXhwIjoxNzk… (285 caractères)\"\n  }\n}",
+  "at": "2026-11-12T23:00:44.158Z"
+ },
+ "4 · Processus d'entretien/1. Inscription d'un nouveau candidat": {
+  "code": 201,
+  "status": "Created",
+  "ms": 395,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "30;w=3600"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Compte créé.\",\n  \"data\": {\n    \"user\": {\n      \"firstName\": \"Candidate\",\n      \"lastName\": \"Process366277\",\n      \"email\": \"raifguizani10+process1794524366277@gmail.com\",\n      \"role\": \"candidat\",\n      \"phone\": \"\",\n      \"preferredLanguage\": \"fr\",\n      \"isBlocked\": false,\n      \"lastLoginAt\": null,\n      \"createdAt\": \"2026-11-12T22:59:26.317Z\",\n      \"updatedAt\": \"2026-11-12T22:59:26.317Z\",\n      \"id\": \"6af644ceaded5ccd472c1e47\"\n    },\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2NDRjZWFkZWQ1Y2NkNDcyYzFlNDciLCJyb2xlIjoiY2FuZGlkYXQiLCJ0eXBlIjoiYWNjZXNzIiwiaWF0IjoxNzk0NTI0MzY2LCJleHAiOjE3OTQ1MjUyNjYsImlzcyI6InRhbGVudHdhdmUtYXB… (248 caractères)\",\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWY2NDRjZWFkZWQ1Y2NkNDcyYzFlNDciLCJqdGkiOiI1NmNmMzgzYi04Yzg2LTQ2Y2ItOThlYS1lY2VmZGU3NDZlNmMiLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc5NDUyNDM2NiwiZXhwIjoxNzk… (285 caractères)\"\n  }\n}",
+  "at": "2026-11-12T23:00:44.159Z"
+ },
+ "4 · Processus d'entretien/2. Offre Développeur·se Full Stack": {
+  "code": 200,
+  "status": "OK",
+  "ms": 23,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"items\": [\n      {\n        \"title\": \"Lead Développeur·se Node.js (stage de fin d'études)\",\n        \"metier\": \"dev-fullstack\",\n        \"description\": \"Stage de fin d'études : vous concevrez un micro-service Node.js en TypeScript, avec base SQL, tests automatisés et déploiement Docker, accompagné·e par un développeur senior.\",\n        \"requiredSkills\": [\n          \"Node.js\",\n          \"TypeScript\",\n          \"Docker\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"niceToHaveSkills\": [],\n        \"minExperienceYears\": 0,\n        \"languages\": [\n          \"français\"\n        ],\n        \"location\": \"Tunis\",\n        \"contractType\": \"Stage\",\n        \"remote\": \"hybride\",\n        \"salaryRange\": \"\",\n        \"matchThreshold\": 70,\n        \"status\": \"publiee\",\n        \"recruiter\": \"6af61ad845744869b6dc9a43\",\n        \"createdAt\": \"2026-11-12T20:00:26.660Z\",\n        \"updatedAt\": \"2026-11-12T20:00:26.660Z\",\n        \"id\": \"6af61ada45744869b6dc9a5f\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"limit\": 1,\n      \"total\": 2,\n      \"pages\": 2,\n      \"hasNext\": true,\n      \"hasPrev\": false\n    },\n    \"sort\": {\n      \"createdAt\": -1,\n      \"_id\": -1\n    }\n  }\n}",
+  "at": "2026-11-12T23:00:44.159Z"
+ },
+ "4 · Processus d'entretien/3. Postuler avec le CV PDF (matching → invitation)": {
+  "code": 201,
+  "status": "Created",
+  "ms": 1569,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "20;w=600"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Score de correspondance 82/100 : vous êtes invité·e en entretien ! Un e-mail vient de vous être envoyé.\",\n  \"data\": {\n    \"matching\": {\n      \"breakdown\": {\n        \"skills\": 80,\n        \"semantic\": 62,\n        \"experience\": 100,\n        \"languages\": 100\n      },\n      \"score\": 82,\n      \"matchedSkills\": [\n        {\n          \"skill\": \"Node.js\",\n          \"evidence\": \"- API REST avec Node.js et Express, base MongoDB, authentification JWT.\",\n          \"similarity\": 1,\n          \"_id\": \"6af644ceaded5ccd472c1e50\"\n        },\n        {\n          \"skill\": \"TypeScript\",\n          \"evidence\": \"COMPÉTENCES : JavaScript, TypeScript, React, Node.js, Express, MongoDB, Docker, Git, Jest\",\n          \"similarity\": 1,\n          \"_id\": \"6af644ceaded5ccd472c1e51\"\n        },\n        {\n          \"skill\": \"Docker\",\n          \"evidence\": \"- Conteneurisation Docker, Git et intégration continue.\",\n          \"similarity\": 1,\n          \"_id\": \"6af644ceaded5ccd472c1e52\"\n        },\n        \"… 1 élément(s) de plus\"\n      ],\n      \"missingSkills\": [\n        \"SQL\"\n      ],\n      \"experienceYears\": 5,\n      \"languagesFound\": [\n        \"français\",\n        \"anglais\",\n        \"arabe\"\n      ],\n      \"explanation\": [\n        \"+ 4 compétences obligatoires sur 5, chacune prouvée par une phrase du CV.\",\n        \"– SQL demandé mais absent.\",\n        \"Proximité du parcours avec la description du poste : 62/100.\"\n      ],\n      \"method\": \"règles + sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2\",\n      \"computedAt\": \"2026-11-12T22:59:26.964Z\"\n    },\n    \"candidate\": \"6af644ceaded5ccd472c1e47\",\n    \"job\": {\n      \"title\": \"Lead Développeur·se Node.js (stage de fin d'études)\",\n      \"metier\": \"dev-fullstack\",\n      \"location\": \"Tunis\",\n      \"contractType\": \"Stage\",\n      \"matchThreshold\": 70,\n      \"id\": \"6af61ada45744869b6dc9a5f\"\n    },\n    \"coverLetter\": \"Développeuse Full Stack motivée par le recrutement.\",\n    \"cvFileName\": \"CV_Postman.pdf\",\n    \"status\": \"invitee\",\n    \"quiz\": \"6af61ada45744869b6dc9a61\",\n    \"quizAttempt\": null,\n    \"interview\": {\n      \"meet\": {\n        \"provider\": \"google\",\n        \"link\": \"https://meet.google.com/yec-qjpb-aqg\",\n        \"eventId\": \"b8t2uq5cqv8e13boionsc9q97o\"\n      },\n      \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n      \"expiresAt\": \"2026-11-19T22:59:26.982Z\",\n      \"language\": \"fr\",\n      \"status\": \"planifie\",\n      \"id\": \"6af644d0aded5ccd472c1e62\"\n    },\n    \"timeline\": [\n      {\n        \"at\": \"2026-11-12T22:59:26.959Z\",\n        \"status\": \"soumise\",\n        \"note\": \"Candidature déposée\"\n      },\n      {\n        \"at\": \"2026-11-12T22:59:28.479Z\",\n        \"status\": \"invitee\",\n        \"note\": \"Score 82 ≥ seuil 70 : invitation automatique\"\n      }\n    ],\n    \"createdAt\": \"2026-11-12T22:59:26.969Z\",\n    \"updatedAt\": \"2026-11-12T22:59:28.480Z\",\n    \"id\": \"6af644ceaded5ccd472c1e4f\"\n  }\n}",
+  "at": "2026-11-12T23:00:44.159Z"
+ },
+ "4 · Processus d'entretien/5. Entretien avant le quiz : refusé (409)": {
+  "code": 409,
+  "status": "Conflict",
+  "ms": 39,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": false,\n  \"code\": \"QUIZ_REQUIRED\",\n  \"message\": \"Passez d'abord le quiz de compétences : l'entretien s'appuie sur ses résultats.\"\n}",
+  "at": "2026-11-12T23:00:44.159Z"
+ },
+ "4 · Processus d'entretien/6. Démarrer le quiz de compétences": {
+  "code": 201,
+  "status": "Created",
+  "ms": 40,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Quiz démarré : bonne chance !\",\n  \"data\": {\n    \"attempt\": {\n      \"quiz\": \"6af61ada45744869b6dc9a61\",\n      \"application\": \"6af644ceaded5ccd472c1e4f\",\n      \"candidate\": \"6af644ceaded5ccd472c1e47\",\n      \"questionIds\": [\n        \"6af61ada45744869b6dc9a6a\",\n        \"6af61ada45744869b6dc9a67\",\n        \"6af61ada45744869b6dc9a64\",\n        \"… 5 élément(s) de plus\"\n      ],\n      \"score\": 0,\n      \"maxScore\": 0,\n      \"percent\": 0,\n      \"passed\": false,\n      \"status\": \"en_cours\",\n      \"deadlineAt\": \"2026-11-12T23:07:28.758Z\",\n      \"submittedAt\": null,\n      \"answers\": [],\n      \"perSkill\": [],\n      \"startedAt\": \"2026-11-12T22:59:28.759Z\",\n      \"createdAt\": \"2026-11-12T22:59:28.759Z\",\n      \"updatedAt\": \"2026-11-12T22:59:28.759Z\",\n      \"id\": \"6af644d0aded5ccd472c1e88\"\n    },\n    \"questions\": [\n      {\n        \"id\": \"6af61ada45744869b6dc9a6a\",\n        \"text\": \"Pourquoi créer un index sur un champ MongoDB souvent filtré ?\",\n        \"options\": [\n          \"Pour chiffrer le champ\",\n          \"Pour éviter un parcours complet de la collection\",\n          \"Pour le rendre unique obligatoirement\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"skill\": \"MongoDB\",\n        \"points\": 1\n      },\n      {\n        \"id\": \"6af61ada45744869b6dc9a67\",\n        \"text\": \"Node.js exécute le JavaScript de l'application principalement…\",\n        \"options\": [\n          \"sur plusieurs threads en parallèle\",\n          \"sur un seul thread avec une boucle d'événements\",\n          \"dans le navigateur\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"skill\": \"Node.js\",\n        \"points\": 1\n      },\n      {\n        \"id\": \"6af61ada45744869b6dc9a64\",\n        \"text\": \"Dans quel ordre s'affichent : console.log(1); setTimeout(()=>console.log(2)); Promise.resolve().then(()=>console.log(3)); ?\",\n        \"options\": [\n          \"1 2 3\",\n          \"1 3 2\",\n          \"3 1 2\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"skill\": \"JavaScript\",\n        \"points\": 2\n      },\n      \"… 5 élément(s) de plus\"\n    ],\n    \"resumed\": false\n  }\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/7. Envoyer les réponses du quiz (correction serveur)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 49,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Quiz envoyé : 44/100.\",\n  \"data\": {\n    \"attempt\": {\n      \"quiz\": \"6af61ada45744869b6dc9a61\",\n      \"application\": \"6af644ceaded5ccd472c1e4f\",\n      \"candidate\": \"6af644ceaded5ccd472c1e47\",\n      \"questionIds\": [\n        \"6af61ada45744869b6dc9a6a\",\n        \"6af61ada45744869b6dc9a67\",\n        \"6af61ada45744869b6dc9a64\",\n        \"… 5 élément(s) de plus\"\n      ],\n      \"score\": 4,\n      \"maxScore\": 9,\n      \"percent\": 44,\n      \"passed\": false,\n      \"status\": \"terminee\",\n      \"deadlineAt\": \"2026-11-12T23:07:28.758Z\",\n      \"submittedAt\": \"2026-11-12T22:59:28.900Z\",\n      \"answers\": [\n        {\n          \"questionId\": \"6af61ada45744869b6dc9a6a\",\n          \"selectedIndex\": 0,\n          \"correct\": false,\n          \"points\": 0,\n          \"skill\": \"MongoDB\",\n          \"timeMs\": 9000\n        },\n        {\n          \"questionId\": \"6af61ada45744869b6dc9a67\",\n          \"selectedIndex\": 1,\n          \"correct\": true,\n          \"points\": 1,\n          \"skill\": \"Node.js\",\n          \"timeMs\": 9000\n        },\n        {\n          \"questionId\": \"6af61ada45744869b6dc9a64\",\n          \"selectedIndex\": 0,\n          \"correct\": false,\n          \"points\": 0,\n          \"skill\": \"JavaScript\",\n          \"timeMs\": 9000\n        },\n        \"… 5 élément(s) de plus\"\n      ],\n      \"perSkill\": [\n        {\n          \"skill\": \"MongoDB\",\n          \"correct\": 0,\n          \"total\": 1,\n          \"percent\": 0\n        },\n        {\n          \"skill\": \"Node.js\",\n          \"correct\": 1,\n          \"total\": 1,\n          \"percent\": 100\n        },\n        {\n          \"skill\": \"JavaScript\",\n          \"correct\": 0,\n          \"total\": 1,\n          \"percent\": 0\n        },\n        \"… 4 élément(s) de plus\"\n      ],\n      \"startedAt\": \"2026-11-12T22:59:28.759Z\",\n      \"createdAt\": \"2026-11-12T22:59:28.759Z\",\n      \"updatedAt\": \"2026-11-12T22:59:28.901Z\",\n      \"id\": \"6af644d0aded5ccd472c1e88\"\n    },\n    \"passingScore\": 60,\n    \"correction\": [\n      {\n        \"questionId\": \"6af61ada45744869b6dc9a6a\",\n        \"text\": \"Pourquoi créer un index sur un champ MongoDB souvent filtré ?\",\n        \"options\": [\n          \"Pour chiffrer le champ\",\n          \"Pour éviter un parcours complet de la collection\",\n          \"Pour le rendre unique obligatoirement\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"selectedIndex\": 0,\n        \"correctIndex\": 1,\n        \"correct\": false,\n        \"explanation\": \"L'index évite le COLLSCAN.\",\n        \"skill\": \"MongoDB\"\n      },\n      {\n        \"questionId\": \"6af61ada45744869b6dc9a67\",\n        \"text\": \"Node.js exécute le JavaScript de l'application principalement…\",\n        \"options\": [\n          \"sur plusieurs threads en parallèle\",\n          \"sur un seul thread avec une boucle d'événements\",\n          \"dans le navigateur\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"selectedIndex\": 1,\n        \"correctIndex\": 1,\n        \"correct\": true,\n        \"explanation\": \"Boucle d'événements mono-thread ; les E/S sont asynchrones.\",\n        \"skill\": \"Node.js\"\n      },\n      {\n        \"questionId\": \"6af61ada45744869b6dc9a64\",\n        \"text\": \"Dans quel ordre s'affichent : console.log(1); setTimeout(()=>console.log(2)); Promise.resolve().then(()=>console.log(3)); ?\",\n        \"options\": [\n          \"1 2 3\",\n          \"1 3 2\",\n          \"3 1 2\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"selectedIndex\": 0,\n        \"correctIndex\": 1,\n        \"correct\": false,\n        \"explanation\": \"Les micro-tâches (promesses) passent avant les macro-tâches (setTimeout).\",\n        \"skill\": \"JavaScript\"\n      },\n      \"… 5 élément(s) de plus\"\n    ]\n  }\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/8. Démarrer l'entretien avec l'avatar (5 questions)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 5491,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Entretien démarré.\",\n  \"data\": {\n    \"interview\": {\n      \"meet\": {\n        \"provider\": \"google\",\n        \"link\": \"https://meet.google.com/yec-qjpb-aqg\",\n        \"eventId\": \"b8t2uq5cqv8e13boionsc9q97o\"\n      },\n      \"avatar\": {\n        \"name\": \"Nora\",\n        \"voice\": \"feminine\"\n      },\n      \"decision\": {\n        \"value\": \"en_attente\"\n      },\n      \"application\": \"6af644ceaded5ccd472c1e4f\",\n      \"candidate\": {\n        \"firstName\": \"Candidate\",\n        \"lastName\": \"Process366277\",\n        \"email\": \"raifguizani10+process1794524366277@gmail.com\",\n        \"id\": \"6af644ceaded5ccd472c1e47\"\n      },\n      \"job\": {\n        \"title\": \"Lead Développeur·se Node.js (stage de fin d'études)\",\n        \"metier\": \"dev-fullstack\",\n        \"location\": \"Tunis\",\n        \"id\": \"6af61ada45744869b6dc9a5f\"\n      },\n      \"quizAttempt\": \"6af644d0aded5ccd472c1e88\",\n      \"metier\": \"dev-fullstack\",\n      \"title\": \"Entretien — Lead Développeur·se Node.js (stage de fin d'études)\",\n      \"candidateName\": \"Candidate Process366277\",\n      \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n      \"expiresAt\": \"2026-11-19T22:59:26.982Z\",\n      \"durationMinutes\": 5,\n      \"language\": \"fr\",\n      \"status\": \"en_cours\",\n      \"recruiterNotes\": \"\",\n      \"questions\": [\n        {\n          \"order\": 1,\n          \"type\": \"presentation\",\n          \"skill\": \"Présentation\",\n          \"text\": \"Bonjour et bienvenue. Pour commencer, présentez-vous en quelques phrases : votre parcours et ce qui vous amène à ce poste.\",\n          \"timeLimitSec\": 45\n        },\n        {\n          \"order\": 2,\n          \"type\": \"technique\",\n          \"skill\": \"MongoDB\",\n          \"text\": \"Une requête sur votre base devient lente en production. Quelle est votre démarche ?\",\n          \"timeLimitSec\": 60\n        },\n        {\n          \"order\": 3,\n          \"type\": \"technique\",\n          \"skill\": \"JavaScript\",\n          \"text\": \"Comment implémenteriez-vous les tests unitaires pour votre micro-service Node.js en TypeScript ?\",\n          \"timeLimitSec\": 60\n        },\n        \"… 2 élément(s) de plus\"\n      ],\n      \"answers\": [],\n      \"createdAt\": \"2026-11-12T22:59:28.477Z\",\n      \"updatedAt\": \"2026-11-12T22:59:34.482Z\",\n      \"…\": \"3 champ(s) de plus\"\n    },\n    \"resumed\": false\n  }\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/9. Réponse 1 — ORALE (fichier WAV transcrit par Whisper)": {
+  "code": 202,
+  "status": "Accepted",
+  "ms": 54,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Réponse reçue : transcription et analyse en cours.\",\n  \"data\": {\n    \"queued\": true,\n    \"questionIndex\": 0,\n    \"remaining\": 4\n  }\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/10. Réponse 1 en double : refusée (409)": {
+  "code": 409,
+  "status": "Conflict",
+  "ms": 35,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": false,\n  \"code\": \"ALREADY_ANSWERED\",\n  \"message\": \"Cette question a déjà reçu une réponse.\"\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/11. Réponse 2 — écrite (technique)": {
+  "code": 202,
+  "status": "Accepted",
+  "ms": 33,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Réponse reçue : transcription et analyse en cours.\",\n  \"data\": {\n    \"queued\": true,\n    \"questionIndex\": 1,\n    \"remaining\": 4\n  }\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/12. Réponse 3 — écrite (technique)": {
+  "code": 202,
+  "status": "Accepted",
+  "ms": 39,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Réponse reçue : transcription et analyse en cours.\",\n  \"data\": {\n    \"queued\": true,\n    \"questionIndex\": 2,\n    \"remaining\": 4\n  }\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/13. Réponse 4 — écrite (situation vécue)": {
+  "code": 202,
+  "status": "Accepted",
+  "ms": 39,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Réponse reçue : transcription et analyse en cours.\",\n  \"data\": {\n    \"queued\": true,\n    \"questionIndex\": 3,\n    \"remaining\": 4\n  }\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/14. Réponse 5 — écrite (motivation)": {
+  "code": 202,
+  "status": "Accepted",
+  "ms": 48,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Réponse reçue : transcription et analyse en cours.\",\n  \"data\": {\n    \"queued\": true,\n    \"questionIndex\": 4,\n    \"remaining\": 4\n  }\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/15. Terminer l'entretien": {
+  "code": 202,
+  "status": "Accepted",
+  "ms": 30,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Entretien terminé.\",\n  \"data\": {\n    \"status\": \"termine\",\n    \"message\": \"Entretien terminé : vos réponses sont en cours d'analyse.\"\n  }\n}",
+  "at": "2026-11-12T23:00:44.160Z"
+ },
+ "4 · Processus d'entretien/16. Attendre l'évaluation (se répète jusqu'au résultat)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 43,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"meet\": {\n      \"provider\": \"google\",\n      \"link\": \"https://meet.google.com/yec-qjpb-aqg\",\n      \"eventId\": \"b8t2uq5cqv8e13boionsc9q97o\"\n    },\n    \"avatar\": {\n      \"name\": \"Nora\",\n      \"voice\": \"feminine\"\n    },\n    \"evaluation\": {\n      \"weights\": {\n        \"quiz\": 0.25,\n        \"technical\": 0.45,\n        \"communication\": 0.15,\n        \"motivation\": 0.15\n      },\n      \"overall\": 54,\n      \"technical\": 49,\n      \"communication\": 75,\n      \"motivation\": 67,\n      \"quiz\": 44,\n      \"recommendation\": \"a_revoir\",\n      \"summary\": \"La personne candidate présente un parcours solide en design numérique et une expérience professionnelle variée, mais manque de précision dans sa présentation et de connaissances techniques approfondie… (312 caractères)\",\n      \"strengths\": [\n        \"Expérience professionnelle variée, notamment en design numérique\",\n        \"Compétences solides en travail d'équipe et gestion de conflits\"\n      ],\n      \"improvements\": [\n        \"Améliorer sa présentation et sa communication des compétences techniques\",\n        \"Développer ses connaissances techniques en Node.js, MongoDB et JavaScript\",\n        \"Travailler sur l'intégration de tests unitaires pour les micro-services Node.js\"\n      ],\n      \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse LLM\",\n      \"evaluatedAt\": \"2026-11-12T23:00:29.395Z\"\n    },\n    \"decision\": {\n      \"value\": \"en_attente\"\n    },\n    \"application\": \"6af644ceaded5ccd472c1e4f\",\n    \"candidate\": {\n      \"firstName\": \"Candidate\",\n      \"lastName\": \"Process366277\",\n      \"email\": \"raifguizani10+process1794524366277@gmail.com\",\n      \"id\": \"6af644ceaded5ccd472c1e47\"\n    },\n    \"job\": {\n      \"title\": \"Lead Développeur·se Node.js (stage de fin d'études)\",\n      \"metier\": \"dev-fullstack\",\n      \"location\": \"Tunis\",\n      \"id\": \"6af61ada45744869b6dc9a5f\"\n    },\n    \"quizAttempt\": \"6af644d0aded5ccd472c1e88\",\n    \"metier\": \"dev-fullstack\",\n    \"title\": \"Entretien — Lead Développeur·se Node.js (stage de fin d'études)\",\n    \"candidateName\": \"Candidate Process366277\",\n    \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n    \"expiresAt\": \"2026-11-19T22:59:26.982Z\",\n    \"durationMinutes\": 5,\n    \"language\": \"fr\",\n    \"status\": \"evalue\",\n    \"recruiterNotes\": \"\",\n    \"questions\": [\n      {\n        \"order\": 1,\n        \"type\": \"presentation\",\n        \"skill\": \"Présentation\",\n        \"text\": \"Bonjour et bienvenue. Pour commencer, présentez-vous en quelques phrases : votre parcours et ce qui vous amène à ce poste.\",\n        \"keyPoints\": [\n          \"ma formation, mon diplôme et mon école\",\n          \"mes expériences professionnelles, stages ou projets\",\n          \"mes compétences principales et les outils que je maîtrise\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"timeLimitSec\": 45,\n        \"source\": \"banque\"\n      },\n      {\n        \"order\": 2,\n        \"type\": \"technique\",\n        \"skill\": \"MongoDB\",\n        \"text\": \"Une requête sur votre base devient lente en production. Quelle est votre démarche ?\",\n        \"keyPoints\": [\n          \"mesurer et identifier la requête lente (logs, explain)\",\n          \"ajouter ou corriger un index adapté\",\n          \"réduire les données renvoyées (projection, pagination)\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"timeLimitSec\": 60,\n        \"source\": \"banque\"\n      },\n      {\n        \"order\": 3,\n        \"type\": \"technique\",\n        \"skill\": \"JavaScript\",\n        \"text\": \"Comment implémenteriez-vous les tests unitaires pour votre micro-service Node.js en TypeScript ?\",\n        \"keyPoints\": [\n          \"Implémentation de tests unitaires\",\n          \"Utilisation d'un framework de test adapté\",\n          \"Intégration avec un outil de build et de déploiement\"\n        ],\n        \"timeLimitSec\": 60,\n        \"source\": \"ia\"\n      },\n      \"… 2 élément(s) de plus\"\n    ],\n    \"answers\": [\n      {\n        \"scores\": {\n          \"relevance\": 64,\n          \"coverage\": 55,\n          \"communication\": 69,\n          \"llm\": 40\n        },\n        \"questionIndex\": 0,\n        \"transcript\": \"Bonjour, je m'appelle Inès. Je suis diplômée d'un master en design numérique. Pendant trois ans chez Expansia, j'ai mené des entretiens utilisateurs\",\n        \"inputMode\": \"voix\",\n        \"detectedLanguage\": \"fr\",\n        \"durationSec\": 11,\n        \"wordsPerMinute\": 120,\n        \"score\": 53,\n        \"coveredPoints\": [\n          \"ma formation, mon diplôme et mon école\",\n          \"mes expériences professionnelles, stages ou projets\",\n          \"mes compétences principales et les outils que je maîtrise\"\n        ],\n        \"missedPoints\": [\n          \"pourquoi ce poste correspond à mon profil et à ce que je veux faire\"\n        ],\n        \"feedback\": \"Vous avez bien présenté votre parcours académique et une expérience professionnelle. Il serait intéressant de préciser comment vos compétences en design numérique peuvent être appliquées à ce poste de… (224 caractères)\",\n        \"answeredAt\": \"2026-11-12T22:59:47.572Z\"\n      },\n      {\n        \"scores\": {\n          \"relevance\": 43,\n          \"coverage\": 53,\n          \"communication\": 76,\n          \"llm\": 40\n        },\n        \"questionIndex\": 1,\n        \"transcript\": \"Je garde l'état local avec useState, je le remonte ou j'utilise un contexte quand plusieurs composants le partagent, et React Query pour les données du serveur. J'évite les rendus inutiles avec la mém… (209 caractères)\",\n        \"inputMode\": \"texte\",\n        \"detectedLanguage\": \"fr\",\n        \"durationSec\": 0,\n        \"wordsPerMinute\": null,\n        \"score\": 51,\n        \"coveredPoints\": [\n          \"mesurer et identifier la requête lente (logs, explain)\",\n          \"mettre en cache si pertinent\",\n          \"réduire les données renvoyées (projection, pagination)\"\n        ],\n        \"missedPoints\": [\n          \"ajouter ou corriger un index adapté\",\n          \"vérifier après correction\"\n        ],\n        \"feedback\": \"Vous avez bien expliqué comment gérer les états locaux et les données du serveur avec React Query. Cependant, pour résoudre un problème de requête lente en production, il faudrait également considérer… (314 caractères)\",\n        \"answeredAt\": \"2026-11-12T22:59:55.193Z\"\n      },\n      {\n        \"scores\": {\n          \"relevance\": 51,\n          \"coverage\": 54,\n          \"communication\": 76,\n          \"llm\": 20\n        },\n        \"questionIndex\": 2,\n        \"transcript\": \"Je mesure d'abord avec explain pour trouver la requête lente, j'ajoute un index sur les champs filtrés, je limite les données avec une projection et la pagination, puis je vérifie le gain obtenu.\",\n        \"inputMode\": \"texte\",\n        \"detectedLanguage\": \"fr\",\n        \"durationSec\": 0,\n        \"wordsPerMinute\": null,\n        \"score\": 46,\n        \"coveredPoints\": [\n          \"Implémentation de tests unitaires\"\n        ],\n        \"missedPoints\": [\n          \"Utilisation d'un framework de test adapté\",\n          \"Intégration avec un outil de build et de déploiement\"\n        ],\n        \"feedback\": \"Vous avez bien identifié un problème de performance, mais il semblerait que vous ne soyez pas sur la bonne piste pour répondre à la question. Vous devriez plutôt parler des outils et frameworks utilis… (246 caractères)\",\n        \"answeredAt\": \"2026-11-12T23:00:00.568Z\"\n      },\n      \"… 2 élément(s) de plus\"\n    ],\n    \"createdAt\": \"2026-11-12T22:59:28.477Z\",\n    \"…\": \"5 champ(s) de plus\"\n  }\n}",
+  "at": "2026-11-12T23:00:44.163Z"
+ },
+ "4 · Processus d'entretien/17. Le recruteur lit le résultat (grilles visibles)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 23,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"meet\": {\n      \"provider\": \"google\",\n      \"link\": \"https://meet.google.com/yec-qjpb-aqg\",\n      \"eventId\": \"b8t2uq5cqv8e13boionsc9q97o\"\n    },\n    \"avatar\": {\n      \"name\": \"Nora\",\n      \"voice\": \"feminine\"\n    },\n    \"evaluation\": {\n      \"weights\": {\n        \"quiz\": 0.25,\n        \"technical\": 0.45,\n        \"communication\": 0.15,\n        \"motivation\": 0.15\n      },\n      \"overall\": 54,\n      \"technical\": 49,\n      \"communication\": 75,\n      \"motivation\": 67,\n      \"quiz\": 44,\n      \"recommendation\": \"a_revoir\",\n      \"summary\": \"La personne candidate présente un parcours solide en design numérique et une expérience professionnelle variée, mais manque de précision dans sa présentation et de connaissances techniques approfondie… (312 caractères)\",\n      \"strengths\": [\n        \"Expérience professionnelle variée, notamment en design numérique\",\n        \"Compétences solides en travail d'équipe et gestion de conflits\"\n      ],\n      \"improvements\": [\n        \"Améliorer sa présentation et sa communication des compétences techniques\",\n        \"Développer ses connaissances techniques en Node.js, MongoDB et JavaScript\",\n        \"Travailler sur l'intégration de tests unitaires pour les micro-services Node.js\"\n      ],\n      \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse LLM\",\n      \"evaluatedAt\": \"2026-11-12T23:00:29.395Z\"\n    },\n    \"decision\": {\n      \"value\": \"en_attente\"\n    },\n    \"application\": \"6af644ceaded5ccd472c1e4f\",\n    \"candidate\": {\n      \"firstName\": \"Candidate\",\n      \"lastName\": \"Process366277\",\n      \"email\": \"raifguizani10+process1794524366277@gmail.com\",\n      \"id\": \"6af644ceaded5ccd472c1e47\"\n    },\n    \"job\": {\n      \"title\": \"Lead Développeur·se Node.js (stage de fin d'études)\",\n      \"metier\": \"dev-fullstack\",\n      \"location\": \"Tunis\",\n      \"id\": \"6af61ada45744869b6dc9a5f\"\n    },\n    \"quizAttempt\": \"6af644d0aded5ccd472c1e88\",\n    \"metier\": \"dev-fullstack\",\n    \"title\": \"Entretien — Lead Développeur·se Node.js (stage de fin d'études)\",\n    \"candidateName\": \"Candidate Process366277\",\n    \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n    \"expiresAt\": \"2026-11-19T22:59:26.982Z\",\n    \"durationMinutes\": 5,\n    \"language\": \"fr\",\n    \"status\": \"evalue\",\n    \"recruiterNotes\": \"\",\n    \"questions\": [\n      {\n        \"order\": 1,\n        \"type\": \"presentation\",\n        \"skill\": \"Présentation\",\n        \"text\": \"Bonjour et bienvenue. Pour commencer, présentez-vous en quelques phrases : votre parcours et ce qui vous amène à ce poste.\",\n        \"keyPoints\": [\n          \"ma formation, mon diplôme et mon école\",\n          \"mes expériences professionnelles, stages ou projets\",\n          \"mes compétences principales et les outils que je maîtrise\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"timeLimitSec\": 45,\n        \"source\": \"banque\"\n      },\n      {\n        \"order\": 2,\n        \"type\": \"technique\",\n        \"skill\": \"MongoDB\",\n        \"text\": \"Une requête sur votre base devient lente en production. Quelle est votre démarche ?\",\n        \"keyPoints\": [\n          \"mesurer et identifier la requête lente (logs, explain)\",\n          \"ajouter ou corriger un index adapté\",\n          \"réduire les données renvoyées (projection, pagination)\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"timeLimitSec\": 60,\n        \"source\": \"banque\"\n      },\n      {\n        \"order\": 3,\n        \"type\": \"technique\",\n        \"skill\": \"JavaScript\",\n        \"text\": \"Comment implémenteriez-vous les tests unitaires pour votre micro-service Node.js en TypeScript ?\",\n        \"keyPoints\": [\n          \"Implémentation de tests unitaires\",\n          \"Utilisation d'un framework de test adapté\",\n          \"Intégration avec un outil de build et de déploiement\"\n        ],\n        \"timeLimitSec\": 60,\n        \"source\": \"ia\"\n      },\n      \"… 2 élément(s) de plus\"\n    ],\n    \"answers\": [\n      {\n        \"scores\": {\n          \"relevance\": 64,\n          \"coverage\": 55,\n          \"communication\": 69,\n          \"llm\": 40\n        },\n        \"questionIndex\": 0,\n        \"transcript\": \"Bonjour, je m'appelle Inès. Je suis diplômée d'un master en design numérique. Pendant trois ans chez Expansia, j'ai mené des entretiens utilisateurs\",\n        \"inputMode\": \"voix\",\n        \"detectedLanguage\": \"fr\",\n        \"durationSec\": 11,\n        \"wordsPerMinute\": 120,\n        \"score\": 53,\n        \"coveredPoints\": [\n          \"ma formation, mon diplôme et mon école\",\n          \"mes expériences professionnelles, stages ou projets\",\n          \"mes compétences principales et les outils que je maîtrise\"\n        ],\n        \"missedPoints\": [\n          \"pourquoi ce poste correspond à mon profil et à ce que je veux faire\"\n        ],\n        \"feedback\": \"Vous avez bien présenté votre parcours académique et une expérience professionnelle. Il serait intéressant de préciser comment vos compétences en design numérique peuvent être appliquées à ce poste de… (224 caractères)\",\n        \"answeredAt\": \"2026-11-12T22:59:47.572Z\"\n      },\n      {\n        \"scores\": {\n          \"relevance\": 43,\n          \"coverage\": 53,\n          \"communication\": 76,\n          \"llm\": 40\n        },\n        \"questionIndex\": 1,\n        \"transcript\": \"Je garde l'état local avec useState, je le remonte ou j'utilise un contexte quand plusieurs composants le partagent, et React Query pour les données du serveur. J'évite les rendus inutiles avec la mém… (209 caractères)\",\n        \"inputMode\": \"texte\",\n        \"detectedLanguage\": \"fr\",\n        \"durationSec\": 0,\n        \"wordsPerMinute\": null,\n        \"score\": 51,\n        \"coveredPoints\": [\n          \"mesurer et identifier la requête lente (logs, explain)\",\n          \"mettre en cache si pertinent\",\n          \"réduire les données renvoyées (projection, pagination)\"\n        ],\n        \"missedPoints\": [\n          \"ajouter ou corriger un index adapté\",\n          \"vérifier après correction\"\n        ],\n        \"feedback\": \"Vous avez bien expliqué comment gérer les états locaux et les données du serveur avec React Query. Cependant, pour résoudre un problème de requête lente en production, il faudrait également considérer… (314 caractères)\",\n        \"answeredAt\": \"2026-11-12T22:59:55.193Z\"\n      },\n      {\n        \"scores\": {\n          \"relevance\": 51,\n          \"coverage\": 54,\n          \"communication\": 76,\n          \"llm\": 20\n        },\n        \"questionIndex\": 2,\n        \"transcript\": \"Je mesure d'abord avec explain pour trouver la requête lente, j'ajoute un index sur les champs filtrés, je limite les données avec une projection et la pagination, puis je vérifie le gain obtenu.\",\n        \"inputMode\": \"texte\",\n        \"detectedLanguage\": \"fr\",\n        \"durationSec\": 0,\n        \"wordsPerMinute\": null,\n        \"score\": 46,\n        \"coveredPoints\": [\n          \"Implémentation de tests unitaires\"\n        ],\n        \"missedPoints\": [\n          \"Utilisation d'un framework de test adapté\",\n          \"Intégration avec un outil de build et de déploiement\"\n        ],\n        \"feedback\": \"Vous avez bien identifié un problème de performance, mais il semblerait que vous ne soyez pas sur la bonne piste pour répondre à la question. Vous devriez plutôt parler des outils et frameworks utilis… (246 caractères)\",\n        \"answeredAt\": \"2026-11-12T23:00:00.568Z\"\n      },\n      \"… 2 élément(s) de plus\"\n    ],\n    \"createdAt\": \"2026-11-12T22:59:28.477Z\",\n    \"…\": \"4 champ(s) de plus\"\n  }\n}",
+  "at": "2026-11-12T23:00:44.164Z"
+ },
+ "4 · Processus d'entretien/18. Décision du recruteur : retenu (e-mail au candidat)": {
+  "code": 200,
+  "status": "OK",
+  "ms": 72,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"message\": \"Décision enregistrée.\",\n  \"data\": {\n    \"meet\": {\n      \"provider\": \"google\",\n      \"link\": \"https://meet.google.com/yec-qjpb-aqg\",\n      \"eventId\": \"b8t2uq5cqv8e13boionsc9q97o\"\n    },\n    \"avatar\": {\n      \"name\": \"Nora\",\n      \"voice\": \"feminine\"\n    },\n    \"evaluation\": {\n      \"weights\": {\n        \"quiz\": 0.25,\n        \"technical\": 0.45,\n        \"communication\": 0.15,\n        \"motivation\": 0.15\n      },\n      \"overall\": 54,\n      \"technical\": 49,\n      \"communication\": 75,\n      \"motivation\": 67,\n      \"quiz\": 44,\n      \"recommendation\": \"a_revoir\",\n      \"summary\": \"La personne candidate présente un parcours solide en design numérique et une expérience professionnelle variée, mais manque de précision dans sa présentation et de connaissances techniques approfondie… (312 caractères)\",\n      \"strengths\": [\n        \"Expérience professionnelle variée, notamment en design numérique\",\n        \"Compétences solides en travail d'équipe et gestion de conflits\"\n      ],\n      \"improvements\": [\n        \"Améliorer sa présentation et sa communication des compétences techniques\",\n        \"Développer ses connaissances techniques en Node.js, MongoDB et JavaScript\",\n        \"Travailler sur l'intégration de tests unitaires pour les micro-services Node.js\"\n      ],\n      \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse LLM\",\n      \"evaluatedAt\": \"2026-11-12T23:00:29.395Z\"\n    },\n    \"decision\": {\n      \"value\": \"retenu\",\n      \"comment\": \"Très bon entretien, nous vous recontactons pour la suite.\",\n      \"by\": \"6af61ad845744869b6dc9a43\",\n      \"at\": \"2026-11-12T23:00:33.699Z\"\n    },\n    \"application\": \"6af644ceaded5ccd472c1e4f\",\n    \"candidate\": {\n      \"firstName\": \"Candidate\",\n      \"lastName\": \"Process366277\",\n      \"email\": \"raifguizani10+process1794524366277@gmail.com\",\n      \"role\": \"candidat\",\n      \"phone\": \"\",\n      \"preferredLanguage\": \"fr\",\n      \"isBlocked\": false,\n      \"lastLoginAt\": \"2026-11-12T22:59:26.682Z\",\n      \"createdAt\": \"2026-11-12T22:59:26.317Z\",\n      \"updatedAt\": \"2026-11-12T22:59:26.682Z\",\n      \"id\": \"6af644ceaded5ccd472c1e47\"\n    },\n    \"job\": {\n      \"title\": \"Lead Développeur·se Node.js (stage de fin d'études)\",\n      \"id\": \"6af61ada45744869b6dc9a5f\"\n    },\n    \"quizAttempt\": \"6af644d0aded5ccd472c1e88\",\n    \"metier\": \"dev-fullstack\",\n    \"title\": \"Entretien — Lead Développeur·se Node.js (stage de fin d'études)\",\n    \"candidateName\": \"Candidate Process366277\",\n    \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n    \"expiresAt\": \"2026-11-19T22:59:26.982Z\",\n    \"durationMinutes\": 5,\n    \"language\": \"fr\",\n    \"status\": \"evalue\",\n    \"recruiterNotes\": \"\",\n    \"questions\": [\n      {\n        \"order\": 1,\n        \"type\": \"presentation\",\n        \"skill\": \"Présentation\",\n        \"text\": \"Bonjour et bienvenue. Pour commencer, présentez-vous en quelques phrases : votre parcours et ce qui vous amène à ce poste.\",\n        \"keyPoints\": [\n          \"ma formation, mon diplôme et mon école\",\n          \"mes expériences professionnelles, stages ou projets\",\n          \"mes compétences principales et les outils que je maîtrise\",\n          \"… 1 élément(s) de plus\"\n        ],\n        \"timeLimitSec\": 45,\n        \"source\": \"banque\"\n      },\n      {\n        \"order\": 2,\n        \"type\": \"technique\",\n        \"skill\": \"MongoDB\",\n        \"text\": \"Une requête sur votre base devient lente en production. Quelle est votre démarche ?\",\n        \"keyPoints\": [\n          \"mesurer et identifier la requête lente (logs, explain)\",\n          \"ajouter ou corriger un index adapté\",\n          \"réduire les données renvoyées (projection, pagination)\",\n          \"… 2 élément(s) de plus\"\n        ],\n        \"timeLimitSec\": 60,\n        \"source\": \"banque\"\n      },\n      {\n        \"order\": 3,\n        \"type\": \"technique\",\n        \"skill\": \"JavaScript\",\n        \"text\": \"Comment implémenteriez-vous les tests unitaires pour votre micro-service Node.js en TypeScript ?\",\n        \"keyPoints\": [\n          \"Implémentation de tests unitaires\",\n          \"Utilisation d'un framework de test adapté\",\n          \"Intégration avec un outil de build et de déploiement\"\n        ],\n        \"timeLimitSec\": 60,\n        \"source\": \"ia\"\n      },\n      \"… 2 élément(s) de plus\"\n    ],\n    \"answers\": [\n      {\n        \"scores\": {\n          \"relevance\": 64,\n          \"coverage\": 55,\n          \"communication\": 69,\n          \"llm\": 40\n        },\n        \"questionIndex\": 0,\n        \"transcript\": \"Bonjour, je m'appelle Inès. Je suis diplômée d'un master en design numérique. Pendant trois ans chez Expansia, j'ai mené des entretiens utilisateurs\",\n        \"inputMode\": \"voix\",\n        \"detectedLanguage\": \"fr\",\n        \"durationSec\": 11,\n        \"wordsPerMinute\": 120,\n        \"score\": 53,\n        \"coveredPoints\": [\n          \"ma formation, mon diplôme et mon école\",\n          \"mes expériences professionnelles, stages ou projets\",\n          \"mes compétences principales et les outils que je maîtrise\"\n        ],\n        \"missedPoints\": [\n          \"pourquoi ce poste correspond à mon profil et à ce que je veux faire\"\n        ],\n        \"feedback\": \"Vous avez bien présenté votre parcours académique et une expérience professionnelle. Il serait intéressant de préciser comment vos compétences en design numérique peuvent être appliquées à ce poste de… (224 caractères)\",\n        \"answeredAt\": \"2026-11-12T22:59:47.572Z\"\n      },\n      {\n        \"scores\": {\n          \"relevance\": 43,\n          \"coverage\": 53,\n          \"communication\": 76,\n          \"llm\": 40\n        },\n        \"questionIndex\": 1,\n        \"transcript\": \"Je garde l'état local avec useState, je le remonte ou j'utilise un contexte quand plusieurs composants le partagent, et React Query pour les données du serveur. J'évite les rendus inutiles avec la mém… (209 caractères)\",\n        \"inputMode\": \"texte\",\n        \"detectedLanguage\": \"fr\",\n        \"durationSec\": 0,\n        \"wordsPerMinute\": null,\n        \"score\": 51,\n        \"coveredPoints\": [\n          \"mesurer et identifier la requête lente (logs, explain)\",\n          \"mettre en cache si pertinent\",\n          \"réduire les données renvoyées (projection, pagination)\"\n        ],\n        \"missedPoints\": [\n          \"ajouter ou corriger un index adapté\",\n          \"vérifier après correction\"\n        ],\n        \"feedback\": \"Vous avez bien expliqué comment gérer les états locaux et les données du serveur avec React Query. Cependant, pour résoudre un problème de requête lente en production, il faudrait également considérer… (314 caractères)\",\n        \"answeredAt\": \"2026-11-12T22:59:55.193Z\"\n      },\n      {\n        \"scores\": {\n          \"relevance\": 51,\n          \"coverage\": 54,\n          \"communication\": 76,\n          \"llm\": 20\n        },\n        \"questionIndex\": 2,\n        \"transcript\": \"Je mesure d'abord avec explain pour trouver la requête lente, j'ajoute un index sur les champs filtrés, je limite les données avec une projection et la pagination, puis je vérifie le gain obtenu.\",\n        \"inputMode\": \"texte\",\n        \"detectedLanguage\": \"fr\",\n        \"durationSec\": 0,\n        \"wordsPerMinute\": null,\n        \"score\": 46,\n        \"coveredPoints\": [\n          \"Implémentation de tests unitaires\"\n        ],\n        \"missedPoints\": [\n          \"Utilisation d'un framework de test adapté\",\n          \"Intégration avec un outil de build et de déploiement\"\n        ],\n        \"feedback\": \"Vous avez bien identifié un problème de performance, mais il semblerait que vous ne soyez pas sur la bonne piste pour répondre à la question. Vous devriez plutôt parler des outils et frameworks utilis… (246 caractères)\",\n        \"answeredAt\": \"2026-11-12T23:00:00.568Z\"\n      },\n      \"… 2 élément(s) de plus\"\n    ],\n    \"createdAt\": \"2026-11-12T22:59:28.477Z\",\n    \"…\": \"4 champ(s) de plus\"\n  }\n}",
+  "at": "2026-11-12T23:00:44.164Z"
+ },
+ "4 · Processus d'entretien/19. Le candidat voit sa candidature retenue": {
+  "code": 200,
+  "status": "OK",
+  "ms": 41,
+  "headers": [
+   {
+    "key": "RateLimit-Policy",
+    "value": "2000;w=900"
+   },
+   {
+    "key": "Content-Type",
+    "value": "application/json; charset=utf-8"
+   }
+  ],
+  "body": "{\n  \"success\": true,\n  \"data\": {\n    \"matching\": {\n      \"breakdown\": {\n        \"skills\": 80,\n        \"semantic\": 62,\n        \"experience\": 100,\n        \"languages\": 100\n      },\n      \"score\": 82,\n      \"matchedSkills\": [\n        {\n          \"skill\": \"Node.js\",\n          \"evidence\": \"- API REST avec Node.js et Express, base MongoDB, authentification JWT.\",\n          \"similarity\": 1,\n          \"_id\": \"6af644ceaded5ccd472c1e50\"\n        },\n        {\n          \"skill\": \"TypeScript\",\n          \"evidence\": \"COMPÉTENCES : JavaScript, TypeScript, React, Node.js, Express, MongoDB, Docker, Git, Jest\",\n          \"similarity\": 1,\n          \"_id\": \"6af644ceaded5ccd472c1e51\"\n        },\n        {\n          \"skill\": \"Docker\",\n          \"evidence\": \"- Conteneurisation Docker, Git et intégration continue.\",\n          \"similarity\": 1,\n          \"_id\": \"6af644ceaded5ccd472c1e52\"\n        },\n        \"… 1 élément(s) de plus\"\n      ],\n      \"missingSkills\": [\n        \"SQL\"\n      ],\n      \"experienceYears\": 5,\n      \"languagesFound\": [\n        \"français\",\n        \"anglais\",\n        \"arabe\"\n      ],\n      \"explanation\": [\n        \"+ 4 compétences obligatoires sur 5, chacune prouvée par une phrase du CV.\",\n        \"– SQL demandé mais absent.\",\n        \"Proximité du parcours avec la description du poste : 62/100.\"\n      ],\n      \"method\": \"règles + sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2\",\n      \"computedAt\": \"2026-11-12T22:59:26.964Z\"\n    },\n    \"candidate\": {\n      \"firstName\": \"Candidate\",\n      \"lastName\": \"Process366277\",\n      \"email\": \"raifguizani10+process1794524366277@gmail.com\",\n      \"phone\": \"\",\n      \"id\": \"6af644ceaded5ccd472c1e47\"\n    },\n    \"job\": {\n      \"title\": \"Lead Développeur·se Node.js (stage de fin d'études)\",\n      \"metier\": \"dev-fullstack\",\n      \"description\": \"Stage de fin d'études : vous concevrez un micro-service Node.js en TypeScript, avec base SQL, tests automatisés et déploiement Docker, accompagné·e par un développeur senior.\",\n      \"requiredSkills\": [\n        \"Node.js\",\n        \"TypeScript\",\n        \"Docker\",\n        \"… 2 élément(s) de plus\"\n      ],\n      \"niceToHaveSkills\": [],\n      \"minExperienceYears\": 0,\n      \"languages\": [\n        \"français\"\n      ],\n      \"location\": \"Tunis\",\n      \"contractType\": \"Stage\",\n      \"remote\": \"hybride\",\n      \"salaryRange\": \"\",\n      \"matchThreshold\": 70,\n      \"status\": \"publiee\",\n      \"recruiter\": \"6af61ad845744869b6dc9a43\",\n      \"createdAt\": \"2026-11-12T20:00:26.660Z\",\n      \"updatedAt\": \"2026-11-12T20:00:26.660Z\",\n      \"id\": \"6af61ada45744869b6dc9a5f\"\n    },\n    \"coverLetter\": \"Développeuse Full Stack motivée par le recrutement.\",\n    \"cvFileName\": \"CV_Postman.pdf\",\n    \"status\": \"retenue\",\n    \"quiz\": {\n      \"title\": \"Quiz de compétences — Développeur·se Full Stack\",\n      \"metier\": \"dev-fullstack\",\n      \"language\": \"fr\",\n      \"durationMinutes\": 8,\n      \"passingScore\": 60,\n      \"questionsPerAttempt\": 8,\n      \"questionCount\": 0,\n      \"skills\": [],\n      \"id\": \"6af61ada45744869b6dc9a61\"\n    },\n    \"quizAttempt\": {\n      \"quiz\": \"6af61ada45744869b6dc9a61\",\n      \"application\": \"6af644ceaded5ccd472c1e4f\",\n      \"candidate\": \"6af644ceaded5ccd472c1e47\",\n      \"questionIds\": [\n        \"6af61ada45744869b6dc9a6a\",\n        \"6af61ada45744869b6dc9a67\",\n        \"6af61ada45744869b6dc9a64\",\n        \"… 5 élément(s) de plus\"\n      ],\n      \"score\": 4,\n      \"maxScore\": 9,\n      \"percent\": 44,\n      \"passed\": false,\n      \"status\": \"terminee\",\n      \"deadlineAt\": \"2026-11-12T23:07:28.758Z\",\n      \"submittedAt\": \"2026-11-12T22:59:28.900Z\",\n      \"perSkill\": [\n        {\n          \"skill\": \"MongoDB\",\n          \"correct\": 0,\n          \"total\": 1,\n          \"percent\": 0\n        },\n        {\n          \"skill\": \"Node.js\",\n          \"correct\": 1,\n          \"total\": 1,\n          \"percent\": 100\n        },\n        {\n          \"skill\": \"JavaScript\",\n          \"correct\": 0,\n          \"total\": 1,\n          \"percent\": 0\n        },\n        \"… 4 élément(s) de plus\"\n      ],\n      \"startedAt\": \"2026-11-12T22:59:28.759Z\",\n      \"createdAt\": \"2026-11-12T22:59:28.759Z\",\n      \"updatedAt\": \"2026-11-12T22:59:28.901Z\",\n      \"id\": \"6af644d0aded5ccd472c1e88\"\n    },\n    \"interview\": {\n      \"meet\": {\n        \"provider\": \"google\",\n        \"link\": \"https://meet.google.com/yec-qjpb-aqg\",\n        \"eventId\": \"b8t2uq5cqv8e13boionsc9q97o\"\n      },\n      \"avatar\": {\n        \"name\": \"Nora\",\n        \"voice\": \"feminine\"\n      },\n      \"evaluation\": {\n        \"weights\": {\n          \"quiz\": 0.25,\n          \"technical\": 0.45,\n          \"communication\": 0.15,\n          \"motivation\": 0.15\n        },\n        \"overall\": 54,\n        \"technical\": 49,\n        \"communication\": 75,\n        \"motivation\": 67,\n        \"quiz\": 44,\n        \"recommendation\": \"a_revoir\",\n        \"summary\": \"La personne candidate présente un parcours solide en design numérique et une expérience professionnelle variée, mais manque de précision dans sa présentation et de connaissances techniques approfondie… (312 caractères)\",\n        \"strengths\": [\n          \"Expérience professionnelle variée, notamment en design numérique\",\n          \"Compétences solides en travail d'équipe et gestion de conflits\"\n        ],\n        \"improvements\": [\n          \"Améliorer sa présentation et sa communication des compétences techniques\",\n          \"Développer ses connaissances techniques en Node.js, MongoDB et JavaScript\",\n          \"Travailler sur l'intégration de tests unitaires pour les micro-services Node.js\"\n        ],\n        \"method\": \"pondération métier {\\\"quiz\\\":0.25,\\\"technical\\\":0.45,\\\"communication\\\":0.15,\\\"motivation\\\":0.15} ; synthèse LLM\",\n        \"evaluatedAt\": \"2026-11-12T23:00:29.395Z\"\n      },\n      \"decision\": {\n        \"value\": \"retenu\",\n        \"comment\": \"Très bon entretien, nous vous recontactons pour la suite.\",\n        \"by\": \"6af61ad845744869b6dc9a43\",\n        \"at\": \"2026-11-12T23:00:33.699Z\"\n      },\n      \"application\": \"6af644ceaded5ccd472c1e4f\",\n      \"candidate\": \"6af644ceaded5ccd472c1e47\",\n      \"job\": \"6af61ada45744869b6dc9a5f\",\n      \"quizAttempt\": \"6af644d0aded5ccd472c1e88\",\n      \"metier\": \"dev-fullstack\",\n      \"title\": \"Entretien — Lead Développeur·se Node.js (stage de fin d'études)\",\n      \"candidateName\": \"Candidate Process366277\",\n      \"scheduledAt\": \"2026-11-13T09:00:00.000Z\",\n      \"expiresAt\": \"2026-11-19T22:59:26.982Z\",\n      \"durationMinutes\": 5,\n      \"language\": \"fr\",\n      \"status\": \"evalue\",\n      \"recruiterNotes\": \"\",\n      \"questions\": [\n        {\n          \"order\": 1,\n          \"type\": \"presentation\",\n          \"skill\": \"Présentation\",\n          \"text\": \"Bonjour et bienvenue. Pour commencer, présentez-vous en quelques phrases : votre parcours et ce qui vous amène à ce poste.\",\n          \"timeLimitSec\": 45,\n          \"source\": \"banque\"\n        },\n        {\n          \"order\": 2,\n          \"type\": \"technique\",\n          \"skill\": \"MongoDB\",\n          \"text\": \"Une requête sur votre base devient lente en production. Quelle est votre démarche ?\",\n          \"timeLimitSec\": 60,\n          \"source\": \"banque\"\n        },\n        {\n          \"order\": 3,\n          \"type\": \"technique\",\n          \"skill\": \"JavaScript\",\n          \"text\": \"Comment implémenteriez-vous les tests unitaires pour votre micro-service Node.js en TypeScript ?\",\n          \"timeLimitSec\": 60,\n          \"source\": \"ia\"\n        },\n        \"… 2 élément(s) de plus\"\n      ],\n      \"answers\": [\n        {\n          \"scores\": \"{… 4 champ(s)}\",\n          \"questionIndex\": 0,\n          \"transcript\": \"Bonjour, je m'appelle Inès. Je suis diplômée d'un master en design numérique. Pendant trois ans chez Expansia, j'ai mené des entretiens utilisateurs\",\n          \"inputMode\": \"voix\",\n          \"detectedLanguage\": \"fr\",\n          \"durationSec\": 11,\n          \"wordsPerMinute\": 120,\n          \"score\": 53,\n          \"coveredPoints\": \"[… 3 élément(s)]\",\n          \"missedPoints\": \"[… 1 élément(s)]\",\n          \"feedback\": \"Vous avez bien présenté votre parcours académique et une expérience professionnelle. Il serait intéressant de préciser comment vos compétences en design numérique peuvent être appliquées à ce poste de… (224 caractères)\",\n          \"answeredAt\": \"2026-11-12T22:59:47.572Z\"\n        },\n        {\n          \"scores\": \"{… 4 champ(s)}\",\n          \"questionIndex\": 1,\n          \"transcript\": \"Je garde l'état local avec useState, je le remonte ou j'utilise un contexte quand plusieurs composants le partagent, et React Query pour les données du serveur. J'évite les rendus inutiles avec la mém… (209 caractères)\",\n          \"inputMode\": \"texte\",\n          \"detectedLanguage\": \"fr\",\n          \"durationSec\": 0,\n          \"wordsPerMinute\": null,\n          \"score\": 51,\n          \"coveredPoints\": \"[… 3 élément(s)]\",\n          \"missedPoints\": \"[… 2 élément(s)]\",\n          \"feedback\": \"Vous avez bien expliqué comment gérer les états locaux et les données du serveur avec React Query. Cependant, pour résoudre un problème de requête lente en production, il faudrait également considérer… (314 caractères)\",\n          \"answeredAt\": \"2026-11-12T22:59:55.193Z\"\n        },\n        {\n          \"scores\": \"{… 4 champ(s)}\",\n          \"questionIndex\": 2,\n          \"transcript\": \"Je mesure d'abord avec explain pour trouver la requête lente, j'ajoute un index sur les champs filtrés, je limite les données avec une projection et la pagination, puis je vérifie le gain obtenu.\",\n          \"inputMode\": \"texte\",\n          \"detectedLanguage\": \"fr\",\n          \"durationSec\": 0,\n          \"wordsPerMinute\": null,\n          \"score\": 46,\n          \"coveredPoints\": \"[… 1 élément(s)]\",\n          \"missedPoints\": \"[… 2 élément(s)]\",\n          \"feedback\": \"Vous avez bien identifié un problème de performance, mais il semblerait que vous ne soyez pas sur la bonne piste pour répondre à la question. Vous devriez plutôt parler des outils et frameworks utilis… (246 caractères)\",\n          \"answeredAt\": \"2026-11-12T23:00:00.568Z\"\n        },\n        \"… 2 élément(s) de plus\"\n      ],\n      \"createdAt\": \"2026-11-12T22:59:28.477Z\",\n      \"…\": \"4 champ(s) de plus\"\n    },\n    \"timeline\": [\n      {\n        \"at\": \"2026-11-12T22:59:26.959Z\",\n        \"status\": \"soumise\",\n        \"note\": \"Candidature déposée\"\n      },\n      {\n        \"at\": \"2026-11-12T22:59:28.479Z\",\n        \"status\": \"invitee\",\n        \"note\": \"Score 82 ≥ seuil 70 : invitation automatique\"\n      },\n      {\n        \"at\": \"2026-11-12T22:59:28.909Z\",\n        \"status\": \"quiz_termine\",\n        \"note\": \"Quiz : 44/100\"\n      },\n      \"… 2 élément(s) de plus\"\n    ],\n    \"createdAt\": \"2026-11-12T22:59:26.969Z\",\n    \"updatedAt\": \"2026-11-12T23:00:33.712Z\",\n    \"id\": \"6af644ceaded5ccd472c1e4f\"\n  }\n}",
+  "at": "2026-11-12T23:00:44.164Z"
+ }
+}

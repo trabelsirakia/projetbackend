@@ -1,20 +1,85 @@
 {
-  "name": "firstproject",
-  "version": "0.0.0",
+  "name": "talentwave-live",
+  "version": "1.0.0",
+  "description": "TalentWave Live (DataWave, ESPRIT) : recrutement de bout en bout — candidature, job matching IA, quiz de compétences, entretien vidéo de 5 minutes avec un avatar IA, chatbot",
+  "main": "app.js",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "node config/dev.js",
+    "dev:api": "nodemon app.js",
+    "dev:web": "vite --config config/vite.config.mjs",
+    "build": "vite build --config config/vite.config.mjs",
+    "seed": "node models/seed.js",
+    "data:export": "node models/donnees.js export",
+    "data:import": "node models/donnees.js import",
+    "models": "node controller/ai/downloadModels.js",
+    "test": "node --test --test-reporter=spec --test-concurrency=1 \"routes/tests/**/*.test.js\"",
+    "postman": "node routes/tests/postman/build-postman.js",
+    "postman:run": "node routes/tests/postman/run-postman.js",
+    "postman:push": "node routes/tests/postman/push-postman.js",
+    "google:auth": "node config/google-auth.js"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "app.js",
+      "config",
+      "controller",
+      "models",
+      "routes",
+      "views/emails"
+    ],
+    "ext": "js,json",
+    "ignore": [
+      "routes/tests/**",
+      "models/seed.js",
+      "config/dev.js",
+      "config/models-cache/**",
+      "controller/ai/downloadModels.js",
+      "config/google-auth.js"
+    ]
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "mongoose": "^9.11.2",
-    "morgan": "~1.9.1",
-    "node-cron": "^4.6.0",
+    "@huggingface/transformers": "4.3.2",
+    "axios": "^1.21.1",
+    "bcrypt": "^6.0.0",
+    "clsx": "^2.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.4",
+    "helmet": "^8.3.0",
+    "joi": "^17.13.9",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.71.0",
+    "mongoose": "^8.24.8",
+    "morgan": "^1.12.1",
+    "motion": "^12.23.0",
+    "ms": "^2.1.3",
+    "multer": "^2.0.2",
     "nodemailer": "^10.5.0",
-    "twig": "~0.10.3"
+    "pdfjs-dist": "4.10.38",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-hook-form": "^7.92.0",
+    "react-hot-toast": "^2.6.1",
+    "react-router-dom": "^7.18.5",
+    "recharts": "^3.10.1",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-react": "^6.3.0",
+    "newman": "^6.2.3",
+    "nodemon": "^3.1.14",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.7"
+  },
+  "overrides": {
+    "wasm-feature-detect": "1.9.0"
   }
 }

@@ -1,0 +1,18 @@
+node_modules/
+.env
+*.log
+.DS_Store
+# Clé privée de la CA locale : ne quitte jamais ce PC
+config/certs/
+# APK compilé et fichiers de build Android
+config/mobile/dist/
+config/mobile/android/app/src/main/res/raw/talentwave_ca.crt
+
+# Modèles IA pré-entraînés téléchargés (Hugging Face) et sauvegardes des migrations
+config/models-cache/
+models/migrations/backups/
+# Rapports du lanceur Postman (régénérés à chaque exécution)
+routes/tests/postman/rapports/
+
+# Export de la base pour le partage (PARTAGER_TALENTWAVE.bat) : contient des données personnelles
+models/donnees-partagees/
