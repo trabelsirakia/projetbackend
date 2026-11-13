@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TalentWave - Test Anti-Triche</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background-color: #f4f4f9; padding-top: 20px;}
+        #video-container { position: relative; display: inline-block; margin-top: 20px; }
+        video { border-radius: 10px; border: 4px solid #ccc; width: 500px; }
+        #status { font-size: 20px; font-weight: bold; margin-top: 20px; padding: 10px; border-radius: 5px; }
+        .safe { color: green; background-color: #d4edda; }
+        .danger { color: red; background-color: #f8d7da; }
+        
+        /* Le nouveau tableau de bord pour le Backend */
+        #backend-dashboard {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #4A148C;
+            border-radius: 10px;
+            display: inline-block;
+            min-width: 400px;
+        }
+        #integrity-score { font-size: 30px; font-weight: bold; color: #1976D2; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.js"></script>
+</head>
+<body>
+    <h1>🛡️ TalentWave - Surveillance Anti-Triche</h1>
+    <p>Le navigateur envoie les alertes à l'API Backend en temps réel.</p>
+    
+    <div id="video-container">
+        <video id="video" autoplay muted></video>
+    </div>
+    
+    <div id="status" class="safe">Chargement de l'IA... Veuillez patienter.</div>
+
+    <!-- LE TABLEAU DE BORD DU BACKEND -->
+    <div id="backend-dashboard">
+        <h3>Réponse du Backend (Node.js) :</h3>
+        <p>ID de Session : <span id="log-id" style="color:gray;">En attente...</span></p>
+        <p>Score d'Intégrité : <span id="integrity-score">100</span> / 100</p>
+        <p>Statut Backend : <span id="backend-status" style="font-weight:bold; color:green;">En cours</span></p>
+    </div>
+
+    <script>
+        const video = document.getElementById('video');
+        const statusDiv = document.getElementById('status');
+        const logIdSpan = document.getElementById('log-id');
+        const scoreSpan = document.getElementById('integrity-score');
+        const backendStatusSpan = document.getElementById('backend-status');
+
+        let logId = null;
+        let lastAlertTime = 0;
+
+        async function setup() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+
+                await faceapi.nets.tinyFaceDetector.loadFromUri('https://raw.githubusercontent.com/justadudewhohacks/face-api.js/master/weights');
+                statusDiv.innerText = "✅ IA prête. Analyse en cours...";
+                statusDiv.className = "safe";
+
+                await startBackendSession();
+                setInterval(analyzeVideo, 2000);
+
+            } catch (err) {
+                statusDiv.innerText = "❌ Erreur : Impossible d'accéder à la webcam. " + err.message;
+                statusDiv.className = "danger";
+            }
+        }
+
+        async function startBackendSession() {
+            // Remplacez par un vrai ID de test de votre base MongoDB
+            const testId = "6af59b74ab5a0fa55e273d28"; 
+            const response = await fetch('http://localhost:3009/api/anticheat/start', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ userId: "candidat_webcam", testId: testId })
+            });
+            const data = await response.json();
+            logId = data.logId;
+            logIdSpan.innerText = logId; // On affiche l'ID à l'écran !
+            console.log("Session démarrée. ID :", logId);
+        }
+
+        async function analyzeVideo() {
+            if (!logId) return;
+
+            const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions());
+            const now = Date.now();
+
+            if (detections.length === 0) {
+                statusDiv.innerText = "⚠️ Alerte : Visage non détecté !";
+                statusDiv.className = "danger";
+                if (now - lastAlertTime > 5000) {
+                    sendIncident("Looking Away");
+                    lastAlertTime = now;
+                }
+            } 
+            else if (detections.length > 1) {
+                statusDiv.innerText = "🚨 TRICHE : Plusieurs personnes détectées !";
+                statusDiv.className = "danger";
+                if (now - lastAlertTime > 5000) {
+                    sendIncident("Multiple Faces");
+                    lastAlertTime = now;
+                }
+            } 
+            else {
+                statusDiv.innerText = "✅ Candidat seul et attentif.";
+                statusDiv.className = "safe";
+            }
+        }
+
+        async function sendIncident(type) {
+            const response = await fetch(`http://localhost:3009/api/anticheat/${logId}/report`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ type: type })
+            });
+            
+            const data = await response.json();
+            
+            // ON MET A JOUR L'ECRAN AVEC LA REPONSE DU BACKEND !
+            scoreSpan.innerText = data.currentScore;
+            backendStatusSpan.innerText = data.status;
+            
+            if (data.status === 'Suspect') {
+                backendStatusSpan.style.color = 'red';
+            }
+
+            console.log("Backend a répondu :", data);
+        }
+
+        setup();
+    </script>
+</body>
+</html>
